@@ -4,25 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>NomNomNow</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:900,600,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/base.css">
   </head>
-
   <body>
-    <div class="">
+    
+
+    <header class="main-nav--fixed-wrap">
+      <div class="main-nav container--wide border-bottom--light">
+        <div class="line lastGroup">
+          <nav class="float--left">
+            <ul class="linear-list">          
+              <li class="main-nav-link">
+                <a class="" href="#dogs">
+                  <span class="main-nav-link--logo"></span>
+                </a>
+              </li>
+              <li class="main-nav-link">
+                <a class="gray align--center pad--lev2 pad--tb0" href="#dogs">Dogs</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="float--right">
+            <ul class="linear-list">
+              <li class="main-nav-link">
+                <a class="gray align--center pad--lev2 pad--tb0" href="#account/details">Account</a>
+              </li>
+              <li class="nav-separator">
+                <a class="gray--separator align--center pad--lev2 pad--tb0">|</
+              </li>
+              <li class="main-nav-link">
+                <a class="gray align--center pad--lev2 pad--tb0" href="#signup/dogs">Logout</a>
+              </li>
+            </ul>          
+          </nav>
+        </div>
+      </div>
+    </header>
       
-      <header class="">
-        <h1>sdkjf</h1>
-      </header>
-
-      <div ui-view class=""></div>
-
-    </div>
-
+    <div ui-view></div>
+      
     <!-- Load scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
     <script src="vendor/angular-ui-router.min.js"></script>    
     <script src="app/app.js"></script>
+    <script src="app/account/scripts/accountModule.js"></script>
     <script src="app/auth/scripts/authModule.js"></script>
+    <script src="app/dogs/scripts/dogsModule.js"></script>
+    <script src="app/deliveries/scripts/deliveriesModule.js"></script>
   </body>
 </html>
