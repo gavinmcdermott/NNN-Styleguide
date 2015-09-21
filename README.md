@@ -4,7 +4,7 @@ NNN Demo
 
 Run the App
 -------------------
-Next, you need to install all of your dependencies.
+First install the dependencies.
 
 `npm install`
 
