@@ -1,45 +1,16 @@
 
-
-/* CONTAINER */
-/*************************/
+/*****************************************/
+/* PAGE CONTAINERS */
+/*****************************************/
 .container--wide {
   max-width: 1000px;
   margin: 0 auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**********************/
+/*****************************************/
 /* GRID */
-/**********************/
-
-
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
 .line {
     zoom: 1
 }
@@ -61,25 +32,6 @@
     background-clip: padding-box !important;
     float: left
 }
-
-
-.unit-sg {
-  background-color: #45CEBD;
-}
-
-.unit-sg--fill {
-  padding: 15px;
-  text-align: center;
-  background-color: #C9F1EC;
-  margin: 15px 0px;
-  max-width: 10000px;
-}
-
-.example-sg {
-  margin-bottom: 30px;
-  border-bottom: 1px dotted #45CEBD;
-}
-
 
 .lastUnit,
 .unit {
@@ -183,9 +135,3 @@
         width: 100%
     }
 }
-
-
-
-
-
-

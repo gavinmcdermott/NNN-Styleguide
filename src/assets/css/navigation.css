@@ -1,8 +1,7 @@
 
-
-
+/*****************************************/
 /* MAIN NAVIGATION */
-/*************************/
+/*****************************************/
 .main-nav {
   background-color: #fafafa;
   height: 72px;
@@ -46,69 +45,41 @@
 }*/
 
 .main-nav-link:hover a {
-  color: #545050;
-  
+  color: #545050;  
   /*-ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;*/
 }
 
-.main-nav-link--logo {
-  background: url(../images/nom_logo.png) no-repeat;
-  background-size: contain;
-  height: 30px;
-  margin: 0 15px;
-  width: 30px;
-  display: inline-block;
-  vertical-align: middle;
-}
 
-
-
-.logo-page-lead {
-  background: url(../images/nom_logo.png) no-repeat;
-  background-size: contain;
-  height: 40px;
-  width: 40px;
-  display: block;
-  vertical-align: middle;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* LOCAL (IN-PAGE) NAVIGATION */
+/*****************************************/
 .local-nav {
   display: block;
+  border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
   margin-bottom: 50px;
+}
+.local-nav:before,
+.local-nav:after {
+    content:" ";
+    display:table
+}
+.local-nav:after {
+    clear:both
 }
 
 .local-nav li {
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
   position: relative;
   float: left;
   padding-right: 40px;
   font-weight: 400;
   font-size: 16px;
 }
+
 /*.local-nav li:first-child {
   padding-left: 0;
 }*/
@@ -119,6 +90,8 @@
 
 .local-nav-link a {
   color: #545050;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 .local-nav-link a:hover,
 .local-nav-link a.selected {
@@ -133,10 +106,3 @@
   left: 0px;
   border-bottom: 2px solid #45CEBD;
 }
-
-
-
-
-
-
-

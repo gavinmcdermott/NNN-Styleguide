@@ -258,8 +258,9 @@
 
 
 
-.pad--t150 {
-  padding-top: 150px !important;
+.pad--main-page {
+  padding-top: 150px;
+  padding-bottom: 72px;
 }
 
 

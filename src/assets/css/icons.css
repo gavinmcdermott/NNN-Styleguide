@@ -28,6 +28,29 @@
 
 
 
+.main-nav-link--logo {
+  background: url(../images/nom_logo.png) no-repeat;
+  background-size: contain;
+  height: 30px;
+  margin: 0 15px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-page-lead {
+  background: url(../images/nom_logo.png) no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  display: block;
+  vertical-align: middle;
+}
+
+
+
+
+
 
 
 
