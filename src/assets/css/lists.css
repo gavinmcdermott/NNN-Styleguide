@@ -14,22 +14,22 @@ li > a {
 /* TILES */
 /*****************************************/
 
-.tiles {
+.tile-list {
   
 }
 
-.tiles li {
+.tile-list li {
   overflow: hidden;
   border-top: 1px solid #E2E2E2;
   padding: 20px 0;
 }
 
-.tiles li h4 {
+.tile-list li h4 {
   margin: 0 0 4px 0;
   line-height: 20px;
 }
 
-.tiles li p {
+.tile-list li p {
   margin: 4px 0 0 0;
 }
 
@@ -42,17 +42,17 @@ li > a {
   overflow: hidden;
 }
 
-.tiles--large li {
+.tile-list--large li {
   padding: 30px 0;
 }
 
-.tiles--light li {
+.tile-list--border-light li {
   border-top: 1px dotted #E2E2E2;
 }
 
 
 /*****************************************/
-/* STANDARD (VERT ALIGNED) LIST */
+/* STANDARD LINKS (VERT ALIGNED) LIST */
 /*****************************************/
 
 .standard-list li {
@@ -83,9 +83,24 @@ li > a {
 .linear-list {
   display: block
 }
-.linear-list > li {
-  float: left
+.linear-list:before,
+.linear-list:after {
+    content:" ";
+    display:table
 }
+.linear-list:after {
+    clear:both
+}
+
+.linear-list > li {
+  float: left;
+  padding-right: 18px;
+}
+
+.linear-list > li:hover {
+  text-decoration: underline;
+}
+
 .linear-list > li:first-child {
   padding-left: 0;
   margin-left: 0;
@@ -101,12 +116,6 @@ li > a {
 .bordered-list {
   display: block 
 }
-
-.bordered-list > li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #E2E2E2;
-}
 .bordered-list:before,
 .bordered-list:after {
     content:" ";
@@ -114,6 +123,12 @@ li > a {
 }
 .bordered-list:after {
     clear:both
+}
+
+.bordered-list > li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E2E2E2;
 }
 
 .bordered-list > li:first-child {

@@ -34,10 +34,6 @@ p + .bordered-list {
   margin-top: 10px;
 }
 
-.small {
-  font-size: 14px;
-}
-
 a {
   cursor: pointer;
   text-decoration: none;
@@ -71,6 +67,10 @@ xmp.code {
 /*****************************************/
 /* TYPOGRAPHY UTILS */
 /*****************************************/
+.f--small {
+  font-size: 14px;
+}
+
 .f--bold {
   font-weight: 900;
 }

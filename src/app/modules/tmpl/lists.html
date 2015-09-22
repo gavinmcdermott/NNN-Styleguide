@@ -1,0 +1,335 @@
+<div class="line below--12">
+  <div class="lastUnit size1of1">
+    <h1 class="f--bold">Lists</h1>
+  </div>
+</div>
+
+<div class="line">
+  <div class="lastUnit size1of1">
+    <ul class="nav-local">
+      <li class="nav-local__link">
+        <a class="selected f--reg" href="">Tile list</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Standard list</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Bordered list</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Stats list</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Linear list</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Tiles -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Tile list</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>We use tiles to give people a way to interact with items that have a lot of potential stats or actions to take within them -- from within a list format. Additionally, tiles are used present information in a way that allows users to scan / confirm information quickly.</p>    
+      <p><strong>Note:</strong> You can also increase the padding (e.g.: for easier scanability in a confirmation list scenario) using the <code>.tile-list--large</code> class on the <code>.tile-list</code> wrapper.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size1of1">  
+          <ul class="tile-list tile-list--border-light">
+
+            <li class="tile">
+              <div class="tile__image">
+                <div class="icon icon--large fa fa-check fill--success"></div>
+              </div>
+              <div class="tile__body">
+                <div class="line">
+                  <h4 class="float--left">Hannah's Meals</h4>
+                  <span class="float--right"><a>Edit</a></span>
+                </div>
+                <p>Eating 2 cups of Tasty Turkey Fare twice daily</p>
+              </div>
+            </li>
+
+            <li class="tile">
+              <div class="tile__image">
+                <div class="icon icon--large fa fa-check fill--success"></div>
+              </div>
+
+              <div class="tile__body"> 
+                <div class="line">
+                  <h4 class="float--left">Delivery Address</h4>
+                  <span class="float--right"><a href="">Edit</a></span>
+                </div>
+                <p>Delivering to 899 Pine Street, #801 San Francisco, CA 94108</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <ul class="tile-list">
+    <li class="tile">
+      <div class="tile__image">
+        <div class="icon icon--large fa fa-check"></div>
+      </div>
+      <div class="tile__body">
+        <div class="line">
+          <h4 class="float--left">Hannah's Meals</h4>
+          <span class="float--right"><a>Edit</a></span>
+        </div>
+        <p>Eating 2 cups of Tasty Turkey Fare twice daily</p>
+      </div>
+    </li>
+  </ul>        
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Standard list -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Standard list</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Standard lists are used to show a list of vertically aligned nav links.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size1of1">  
+          <ul class="standard-list">
+            <li class="selected"><a href="">Something</a></li>
+            <li><a href="">Something else</a></li>
+            <li><a href="">Something other</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <ul class="standard-list">
+    <li class="selected"><a href="">Something</a></li>
+    <li><a href="">Something else</a></li>
+    <li><a href="">Something other</a></li>
+  </ul> 
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Bordered list -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Bordered list</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Bordered lists are used to call out lists of facts or stats in a table-like format. They help with scanability of data. <strong>Typically they are in a 2 column format</strong> with a label in the left column, and value in the right column.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size1of1">  
+          <ul class="bordered-list">
+            <li class="size1of1 lastGroup">
+              <div class="unit size1of2"><strong>Dog name</strong></div>
+              <div class="lastUnit size1of2">Wutang Pup</div>
+            </li>
+            <li class="size1of1 lastGroup">
+              <div class="unit size1of2"><strong>Favorite toy</strong></div>
+              <div class="lastUnit size1of2">Ball of some kind</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <ul class="bordered-list">
+    <li class="size1of1 lastGroup">
+      <div class="unit size1of2"><strong>Dog name</strong></div>
+      <div class="lastUnit size1of2">Wutang Pup</div>
+    </li>
+    <li class="size1of1 lastGroup">
+      <div class="unit size1of2"><strong>Favorite toy</strong></div>
+      <div class="lastUnit size1of2">Ball of some kind</div>
+    </li>
+  </ul>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Stats list -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Stats list</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Stats lists are used to display important or key pieces of information to a customer. Typically they have a label on the left leading to the statistic on the right.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size2of3">  
+          <ul class="stats-list">
+            <li class="size1of1 lastGroup">
+              <span class="f--reg small">Size</span>
+              <span class="float--right">2 and 3/4 cups</span>
+            </li>
+            <li class="size1of1 lastGroup">
+              <span class="f--reg small">Shape</span>
+              <span class="float--right">Square-ish</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <ul class="stats-list">
+    <li class="size1of1 lastGroup">
+      <span class="f--reg f--small">Size</span>
+      <span class="float--right">2 and 3/4 cups</span>
+    </li>
+    <li class="size1of1 lastGroup">
+      <span class="f--reg f--small">Shape</span>
+      <span class="float--right">Square-ish</span>
+    </li>
+  </ul>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Linear (regular) list -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Linear list</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Linear lists typically how we show a list of horizontally aligned links or data.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size2of3">  
+          <ul class="linear-list">
+            <li><a href="">Something</a></li>
+            <li><a href="">Another</a></li>
+            <li><a href="">Oncemore</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <ul class="linear-list">
+    <li><a href="">Something</a></li>
+    <li><a href="">Another</a></li>
+    <li><a href="">Oncemore</a></li>
+  </ul>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>

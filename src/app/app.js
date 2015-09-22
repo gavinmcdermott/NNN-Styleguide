@@ -22,9 +22,9 @@ angular.module('NNN', [
     url:'/nav',
     templateUrl: 'app/modules/tmpl/nav.html'
   })
-  .state('guide.lists-tiles', {
-    url:'/lists-tiles',
-    templateUrl: 'app/modules/tmpl/lists-tiles.html'
+  .state('guide.lists', {
+    url:'/lists',
+    templateUrl: 'app/modules/tmpl/lists.html'
   })
   .state('guide.sections-panels', {
     url:'/sections-panels',
