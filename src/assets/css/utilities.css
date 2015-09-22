@@ -1,6 +1,50 @@
 
 
 
+
+
+
+
+
+
+
+
+.gray {
+  color: #9B9B9B;
+  position: relative;
+}
+
+.gray.selected {
+  color: #545050;
+}
+
+.gray--separator {
+  color: #d0d0d0;
+}
+
+
+
+
+
+
+
+.fill--success {
+  /*border: 2px solid #45CEBD;*/
+  /*background-color: #FFF;*/
+  background-color: #45CEBD;
+  /*background-color: #DBF3F0;*/
+  color: #FFF;
+  /*color: #45CEBD;*/
+}
+
+.fill--light {
+  background-color: #EFEFEF;
+}
+
+
+
+
+
 /* ELEMENTS */
 .el--dim {
   opacity: .75 !important;
@@ -258,7 +302,7 @@
 
 
 
-.pad--main-page {
+.pad--main-page-container {
   padding-top: 150px;
   padding-bottom: 72px;
 }

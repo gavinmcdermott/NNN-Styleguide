@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/grid.css">
+
+
     <link rel="stylesheet" href="assets/css/typography.css">
+    
+
     <link rel="stylesheet" href="assets/css/forms.css">
     <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
@@ -23,18 +27,17 @@
   <body>
     
     <!-- Header-->
-    <header class="main-nav--fixed-wrap">
-      <div class="main-nav container--wide border-bottom--light">
-        <div class="line lastGroup">
-          <nav class="float--left">
-            <ul class="linear-list">          
-              <li class="main-nav-link">
-                <a href="#">
-                  <span class="main-nav-link--logo"></span>
-                </a>
+    <header class="nav-main--fixed-wrap">
+      <!-- Inner wrapper -->
+      <div class="container--wide nav-main border-bottom--light">
+        <div class="line">
+          <nav class="lastGroup size2of3">
+            <ul class="list--linear">          
+              <li class="nav-main-link">
+                <a ui-sref="guide.grid"><span class="logo logo--nav-main logo--small"></span></a>
               </li>
-              <li class="main-nav-link">
-                <a ui-sref-active="selected" class="gray align--center pad--lev2 pad--tb0" ui-sref="guide">Styleguide</a>
+              <li class="nav-main-link">
+                <a class="gray align--center pad--lev2 pad--tb0" ui-sref="guide.grid">Styleguide</a>
               </li>
             </ul>
           </nav>
@@ -43,7 +46,7 @@
     </header>
     
     <!-- Main body -->
-    <div class="container--wide pad--main-page">
+    <div class="container--wide pad--main-page-container">
       <ui-view />
     </div>
 

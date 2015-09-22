@@ -1,10 +1,19 @@
+/*****************************************/
+/* GENERAL */
+/*****************************************/
+
+li > a {
+  display: block;
+  line-height: inherit; 
+  height: inherit; 
+}
 
 
 
-
-
+/*****************************************/
 /* TILES */
-/*******************/
+/*****************************************/
+
 .tiles {
   
 }
@@ -47,20 +56,10 @@
 
 
 
+/*****************************************/
+/* STANDARD (VERT ALIGNED) LIST */
+/*****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-/* LISTS */
-/*******************/
 .list--standard li {
   border-radius: 2px;
   cursor: pointer;
@@ -82,43 +81,17 @@
 
 
 
+/*****************************************/
+/* LINEAR (HORIZ ALIGNED) LIST */
+/*****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LISTS */
-/*******************/
-li > a {
-  display: block;
-  line-height: inherit; 
-  height: inherit; 
-}
-
-
-.linear-list {
+.list--linear {
   display: block
 }
-.linear-list > li {
+.list--linear > li {
   float: left
 }
-.linear-list > li:first-child {
+.list--linear > li:first-child {
   padding-left: 0;
   margin-left: 0;
   border-left: 0 none
@@ -126,54 +99,62 @@ li > a {
 
 
 
+/*****************************************/
+/* BORDERED (VERT ALIGNED) LIST */
+/*****************************************/
 
-
-
-
-.border-list {
+.list--bordered {
   display: block 
 }
 
-.border-list > li {
+.list--bordered > li {
   padding-top: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid #E2E2E2;
 }
+.list--bordered:before,
+.list--bordered:after {
+    content:" ";
+    display:table
+}
+.list--bordered:after {
+    clear:both
+}
 
-.border-list > li:first-child {
+.list--bordered > li:first-child {
   border-top: 1px solid #E2E2E2;
 }
 
-.border-list > li > div {
+.list--bordered > li > div {
   padding: 0;
 }
 
 
 
+/*****************************************/
+/* LEAD STATS (VERT ALIGN) LIST */
+/*****************************************/
 
-
-
-
-.lead-list {
+.list--lead-stats {
   margin-bottom: 30px;
 }
 
-.lead-list > li {
+.list--lead-stats > li {
   border-bottom: 1px dashed #E0E0E0;
   padding-bottom: 4px;
   margin-bottom: 10px;
 }
 
-.lead-list .start,
-.lead-list .end {
+.list--lead-stats .start,
+.list--lead-stats .end {
   border-bottom: 1px solid #FFF;
 }
 
-.lead-list .start {
+.list--lead-stats .start {
   padding-right: 12px;
 }
 
-.lead-list .end {
+.list--lead-stats .end {
   padding-left: 12px;
 }
 

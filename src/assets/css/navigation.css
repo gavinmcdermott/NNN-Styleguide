@@ -1,15 +1,14 @@
-
 /*****************************************/
 /* MAIN NAVIGATION */
 /*****************************************/
-.main-nav {
+.nav-main {
   background-color: #fafafa;
   height: 72px;
   z-index: 50
   ;  
 }
 
-.main-nav--fixed-wrap {
+.nav-main--fixed-wrap {
   position: fixed;
   width: 100%;
   outline: 0;
@@ -19,23 +18,23 @@
   z-index: 50;
 }
 
-.main-nav li {
+.nav-main li {
   font-size: 14px;
   line-height: 72px;
   font-weight: 400;
 }
 
-.main-nav-link {
+.nav-main-link {
   cursor: pointer;
   /*-ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;*/
 }
 
-.main-nav-link:hover {
+.nav-main-link:hover {
   background-color: #eee;
 }
 
-/*.main-nav .selected:after {
+/*.nav-main .selected:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -44,34 +43,33 @@
   border-bottom: 2px solid #d0d0d0;
 }*/
 
-.main-nav-link:hover a {
+.nav-main-link:hover a {
   color: #545050;  
   /*-ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;*/
 }
 
 
+
 /*****************************************/
 /* LOCAL (IN-PAGE) NAVIGATION */
 /*****************************************/
-.local-nav {
+.nav-local {
   display: block;
   border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
-  /*padding-top: 10px;*/
-  /*padding-bottom: 10px;*/
   margin-bottom: 50px;
 }
-.local-nav:before,
-.local-nav:after {
+.nav-local:before,
+.nav-local:after {
     content:" ";
     display:table
 }
-.local-nav:after {
+.nav-local:after {
     clear:both
 }
 
-.local-nav li {
+.nav-local li {
   /*padding-bottom: 15px;*/
   position: relative;
   float: left;
@@ -80,25 +78,25 @@
   font-size: 16px;
 }
 
-/*.local-nav li:first-child {
+/*.nav-local li:first-child {
   padding-left: 0;
 }*/
 
-.local-nav-link {
+.nav-local-link {
   cursor: pointer;
 }
 
-.local-nav-link a {
+.nav-local-link a {
   color: #545050;
   padding-bottom: 12px;
   padding-top: 12px;
 }
-.local-nav-link a:hover,
-.local-nav-link a.selected {
+.nav-local-link a:hover,
+.nav-local-link a.selected {
   color: #45CEBD;
 }
 
-.local-nav .selected:after {
+.nav-local .selected:after {
   position: absolute;
   content: "";
   bottom: -1px;

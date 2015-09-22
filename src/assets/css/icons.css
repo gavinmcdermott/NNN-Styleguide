@@ -1,8 +1,6 @@
-
-
-
+/*****************************************/
 /* BADGES */
-/*******************/
+/*****************************************/
 .badge {
   display: inline-block;
   position: relative;
@@ -23,50 +21,14 @@
 
 
 
-
-
-
-
-
-.main-nav-link--logo {
-  background: url(../images/nom_logo.png) no-repeat;
-  background-size: contain;
-  height: 30px;
-  margin: 0 15px;
-  width: 30px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.logo-page-lead {
-  background: url(../images/nom_logo.png) no-repeat;
-  background-size: contain;
-  height: 40px;
-  width: 40px;
-  display: block;
-  vertical-align: middle;
-}
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* ICONS */
+/*****************************************/
 .icon {
   position: relative;
   text-align: center;
   display: inline-block;
   border-radius: 50px;
-}
-
-.icon--inline {
-  margin-right: 10px;
-  font-size: 12px;
-  /*color: #45CEBD;*/
 }
 
 .icon--large {
@@ -75,12 +37,35 @@
   line-height: 36px;
 }
 
-.fill--success {
-  /*border: 2px solid #45CEBD;*/
-  /*background-color: #FFF;*/
-  background-color: #45CEBD;
-  /*background-color: #DBF3F0;*/
-  color: #FFF;
+p .icon--inline {
+  margin-right: 10px;
+  font-size: 12px;
   /*color: #45CEBD;*/
+}
+
+
+
+/*****************************************/
+/* LOGOS */
+/*****************************************/
+.logo {
+  background: url(../images/nom_logo.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo--nav-main {
+  margin: 0 15px;
+}
+
+.logo--small {
+  height: 30px;
+  width: 30px;
+}
+
+.logo--med {
+  height: 40px;
+  width: 40px;
 }
 

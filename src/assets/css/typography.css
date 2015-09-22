@@ -1,13 +1,6 @@
-
-
-
-
-
-
-
-
+/*****************************************/
 /* TYPOGRAPHY */
-/**********************/
+/*****************************************/
 h1 {
   font-size: 44px;
   margin-bottom: 18px;
@@ -75,35 +68,9 @@ xmp.code {
 
 
 
-
-
-
-
-
-/* LINKS */
-/*******************/
-.gray {
-  color: #9B9B9B;
-  position: relative;
-}
-
-.gray.selected {
-  color: #545050;
-}
-
-.gray--separator {
-  color: #d0d0d0;
-}
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* TYPOGRAPHY UTILS */
+/*****************************************/
 .f--bold {
   font-weight: 900;
 }
@@ -111,19 +78,6 @@ xmp.code {
 .f--reg {
   font-weight: 400;
 }
-
-.f--light {
-  font-weight: 300;
-}
-
-
-
-
-
-.f--lightgray {
-  color: #B5B5B5;
-}
-
 
 .f--warn {
   color: #EA4343;
