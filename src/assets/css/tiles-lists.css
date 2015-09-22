@@ -33,14 +33,14 @@ li > a {
   margin: 4px 0 0 0;
 }
 
-.tile-image {
+.tile__image {
   margin-right: 20px;
   float: left;
 }
 
-/*.tiles--standard li {
-  padding: 20px 0;
-}*/
+.tile, .tile__body {
+  overflow: hidden;
+}
 
 .tiles--large li {
   padding: 30px 0;
@@ -50,30 +50,25 @@ li > a {
   border-top: 1px dotted #E2E2E2;
 }
 
-.tile, .tile-body {
-  overflow: hidden;
-}
-
-
 
 /*****************************************/
 /* STANDARD (VERT ALIGNED) LIST */
 /*****************************************/
 
-.list--standard li {
+.standard-list li {
   border-radius: 2px;
   cursor: pointer;
 }
 
-.list--standard li.selected {
+.standard-list li.selected {
   background-color: #CCECE8;
 }
 
-.list--standard li:hover:not(.selected) {
+.standard-list li:hover:not(.selected) {
   background-color: #EAEAEA;
 }
 
-.list--standard > li a {
+.standard-list > li a {
   padding: 10px;
   margin-bottom: 10px;
   color: #545050;
@@ -85,13 +80,13 @@ li > a {
 /* LINEAR (HORIZ ALIGNED) LIST */
 /*****************************************/
 
-.list--linear {
+.linear-list {
   display: block
 }
-.list--linear > li {
+.linear-list > li {
   float: left
 }
-.list--linear > li:first-child {
+.linear-list > li:first-child {
   padding-left: 0;
   margin-left: 0;
   border-left: 0 none
@@ -103,58 +98,58 @@ li > a {
 /* BORDERED (VERT ALIGNED) LIST */
 /*****************************************/
 
-.list--bordered {
+.bordered-list {
   display: block 
 }
 
-.list--bordered > li {
+.bordered-list > li {
   padding-top: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid #E2E2E2;
 }
-.list--bordered:before,
-.list--bordered:after {
+.bordered-list:before,
+.bordered-list:after {
     content:" ";
     display:table
 }
-.list--bordered:after {
+.bordered-list:after {
     clear:both
 }
 
-.list--bordered > li:first-child {
+.bordered-list > li:first-child {
   border-top: 1px solid #E2E2E2;
 }
 
-.list--bordered > li > div {
+.bordered-list > li > div {
   padding: 0;
 }
 
 
 
 /*****************************************/
-/* LEAD STATS (VERT ALIGN) LIST */
+/* STATS (VERT ALIGN) LIST */
 /*****************************************/
 
-.list--lead-stats {
+.stats-list {
   margin-bottom: 30px;
 }
 
-.list--lead-stats > li {
+.stats-list > li {
   border-bottom: 1px dashed #E0E0E0;
   padding-bottom: 4px;
   margin-bottom: 10px;
 }
 
-.list--lead-stats .start,
-.list--lead-stats .end {
+.stats-list .start,
+.stats-list .end {
   border-bottom: 1px solid #FFF;
 }
 
-.list--lead-stats .start {
+.stats-list .start {
   padding-right: 12px;
 }
 
-.list--lead-stats .end {
+.stats-list .end {
   padding-left: 12px;
 }
 

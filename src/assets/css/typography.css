@@ -30,7 +30,7 @@ p {
   margin-bottom: 10px;
 }
 
-p + .border-list {
+p + .bordered-list {
   margin-top: 10px;
 }
 
@@ -83,4 +83,6 @@ xmp.code {
   color: #EA4343;
 }
 
-
+.el--dim {
+  opacity: .75 !important;
+}

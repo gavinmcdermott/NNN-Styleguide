@@ -1,4 +1,4 @@
-<div class="line below--24">
+<div class="line below--12">
   <div class="lastUnit size1of1">
     <h1 class="f--bold">Typography</h1>
   </div>
@@ -7,10 +7,13 @@
 <div class="line">
   <div class="lastUnit size1of1">
     <ul class="nav-local">
-      <li class="nav-local-link">
+      <li class="nav-local__link">
         <a class="selected f--reg" href="">Fonts</a>
       </li>
-      <li class="nav-local-link">
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Vertical rhythm</a>
+      </li>
+      <li class="nav-local__link">
         <a class="f--reg" href="">Font utilities</a>
       </li>
     </ul>
@@ -33,7 +36,7 @@
       <h4>Sizes and weights</h4>
       <p>Here's a look at the font sizes we use for various functions in the app.</p>    
 
-      <ul class="list--bordered">
+      <ul class="bordered-list">
         <li class="size1of1 lastUnit">
           <div class="unit size1of2"><h1 class="f--bold nomargin">Header</h1></div>
           <div class="lastUnit size1of2"><h1 class="f--bold el--dim nomargin">44px / 900wt</h1></div>
@@ -69,7 +72,7 @@
     <div class="sub-section">
       <h4 class="sg-example-divider">Layout example</h4>
 
-      <div class="line below--60">
+      <div class="line below--54">
         <div class="lastUnit size1of1">
           <h2 class="f--reg">Some page subtitle</h2>
         </div>
@@ -135,6 +138,76 @@
 
 
 
+<!-- Vertical Rhythm -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Vertical rhythm</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4 class="">A note on vertical rhythm</h4>
+      <p>None of the header tags (<code>h1</code>, <code>h2</code>, <code>h3</code>, or <code>h4</code>) have a noticeable margin on them, <strong>we use utility classes to handle the vertical rhythm</strong>.</p>
+      <p>As such, here are the standard methods we use to achieve vertical rhythm in the app.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="">Code snippets</h4>
+      <p>For <code>h2</code>'s that occupy an entire horizontal line:</p>
+      
+      <xmp class="code">
+  <div class="line">
+    <div class="lastUnit size1of1 below--54">
+      <h2 class="f--reg">Some page subtitle</h2>
+    </div>
+  </div>
+      </xmp>
+
+      <p>Note, we can ditch the <code>line</code> wrapper if we don't take up the width.</p>
+
+      <xmp class="code">
+  <div class="lastUnit size1of1 below--54">
+    <h2 class="f--reg">Some page subtitle</h2>
+  </div>
+      </xmp>
+    </div>
+
+    <div class="sub-section">
+      <h4>Vertical spacings used on headers</h4>
+      <p>Here are the font utils we use to separate to keep things flexible.</p>    
+
+      <ul class="bordered-list">
+        <li class="fill--light size1of1 lastGroup">
+          <div class="unit size1of2"><strong>Header Tag</strong></div>
+          <div class="unit size1of2"><strong>Class Used</strong></div>
+        </li>
+        <li class="size1of1 lastGroup">
+          <div class="unit size1of2">page-level <code>h1</code></div>
+          <div class="unit size1of2">usually in a wrapper that has a <code>.page-lead</code> class</div>
+        </li>
+        <li class="size1of1 lastGroup">
+          <div class="unit size1of2"><code>h2</code></div>
+          <div class="unit size1of2"><code>.below--54</code> class</div>
+        </li>
+        <li class="size1of1 lastGroup">
+          <div class="unit size1of2"><code>h3</code></div>
+          <div class="unit size1of2"><code>.below--12</code> class</div>
+        </li>
+        <li class="size1of1 lastGroup">
+          <div class="unit size1of2"><code>h4</code></div>
+          <div class="unit size1of2">no margin class needed</div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
 <!-- Font utils -->
 <div class="line below--12">
   <div id="sizes" class="lastUnit size1of1">
@@ -145,9 +218,9 @@
 <div class="line section">
   <div class="lastUnit size1of1">
 
-    <p>Here's the behavior you can expect from your grid on different screen sizes.</p>    
+    <p>Here are the font utils we use to separate to keep things flexible.</p>    
 
-    <ul class="list--bordered">
+    <ul class="bordered-list">
       <li class="fill--light size1of1 lastGroup">
         <div class="unit size1of2"><strong>CSS Class</strong></div>
         <div class="unit size1of2"><strong>Result</strong></div>
@@ -166,33 +239,9 @@
       </li>
       <li class="size1of1 lastGroup">
         <div class="unit size1of2"><code>.el--dim</code></div>
-        <div class="unit size1of2">sets the elements opacity to 80%</div>
+        <div class="unit size1of2">sets the elements opacity to 75%</div>
       </li>
     </ul>
 
-
   </div>
 </div>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

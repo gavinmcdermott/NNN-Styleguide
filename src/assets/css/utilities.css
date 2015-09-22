@@ -45,11 +45,6 @@
 
 
 
-/* ELEMENTS */
-.el--dim {
-  opacity: .75 !important;
-}
-
 
 
 
@@ -129,7 +124,7 @@
   border-left: 2px solid #BDBDBD;
 }
 
-.border-bottom--light {
+.border--bottom-light {
   border-bottom: 1px solid #E2E2E2;
 }
 
@@ -288,6 +283,10 @@
   padding-bottom: 36px !important;
 }
 
+.pad--b54 {
+  padding-bottom: 54px !important;
+}
+
 .pad--b60 {
   padding-bottom: 60px !important;
 }
@@ -302,7 +301,7 @@
 
 
 
-.pad--main-page-container {
+.pad__main-page {
   padding-top: 150px;
   padding-bottom: 72px;
 }
@@ -332,6 +331,10 @@
 
 .below--48 {
   margin-bottom: 48px !important;
+}
+
+.below--54 {
+  margin-bottom: 54px !important;
 }
 
 .below--60 {
