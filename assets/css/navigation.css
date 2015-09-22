@@ -4,8 +4,7 @@
 .nav-main {
   background-color: #fafafa;
   height: 72px;
-  z-index: 50
-  ;  
+  z-index: 50;  
 }
 
 .nav-main__fixed-wrap {
@@ -49,6 +48,9 @@
   transition: all 0.25s ease-in-out 0s;*/
 }
 
+.nav-main .linear-list li:hover {
+  text-decoration: none;
+}
 
 
 /*****************************************/
