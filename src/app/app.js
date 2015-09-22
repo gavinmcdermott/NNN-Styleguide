@@ -1,138 +1,63 @@
 'use strict';
 
 angular.module('NNN', [
-  'NNN.Account',
-  'NNN.Auth',
-  'NNN.Dogs',
-  'NNN.Deliveries',
+  'NNN.Modules',
   'ui.router'
 ])
 
 .config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('signup/dogs');
+  $urlRouterProvider.otherwise('/guide/grid');
 
   $stateProvider
-  .state('signupDogs', {
-    url:'/signup/dogs',
-    templateUrl: 'app/auth/tmpl/signup-dogs.html',
+  .state('guide', {
+    url:'/guide',
+    abstract: true,
+    templateUrl: 'app/modules/tmpl/guide.html',
   })
-  .state('signupMeals', {
-    url:'/signup/meals',
-    templateUrl: 'app/auth/tmpl/signup-meals.html',
+  .state('guide.grid', {
+    url:'/grid',
+    templateUrl: 'app/modules/tmpl/grid.html'
   })
-  .state('signupDelivery', {
-    url:'/signup/delivery',
-    templateUrl: 'app/auth/tmpl/signup-delivery.html',
+  .state('guide.nav', {
+    url:'/nav',
+    templateUrl: 'app/modules/tmpl/nav.html'
   })
-  .state('signupConfirm', {
-    url:'/signup/confirm',
-    templateUrl: 'app/auth/tmpl/signup-confirm.html',
+  .state('guide.lists-tiles', {
+    url:'/lists-tiles',
+    templateUrl: 'app/modules/tmpl/lists-tiles.html'
   })
-  .state('signupPayment', {
-    url:'/signup/payment',
-    templateUrl: 'app/auth/tmpl/signup-payment.html',
+  .state('guide.sections-panels', {
+    url:'/sections-panels',
+    templateUrl: 'app/modules/tmpl/sections-panels.html'
   })
-
-
-  .state('dogsList', {
-    url:'/dogs',
-    templateUrl: 'app/dogs/tmpl/dogs.html',
-    controller: 'MainCtrl',
-    controllerAs: 'main'
+  .state('guide.forms', {
+    url:'/forms',
+    templateUrl: 'app/modules/tmpl/forms.html'
   })
-  .state('dogNew', {
-    url:'/dog/new',
-    templateUrl: 'app/dogs/tmpl/dog-new.html',
+  .state('guide.notices', {
+    url:'/notices',
+    templateUrl: 'app/modules/tmpl/notices.html'
   })
-  .state('dog', {
-    url:'/dogs/:dogId',
-    templateUrl: 'app/dogs/tmpl/dog.html',
+  .state('guide.utils', {
+    url:'/utils',
+    templateUrl: 'app/modules/tmpl/utils.html'
   })
-  .state('dogMeals', {
-    url:'/dogs/:dogId/meals',
-    templateUrl: 'app/dogs/tmpl/dog-meals.html',
+  .state('guide.themes', {
+    url:'/themes',
+    templateUrl: 'app/modules/tmpl/themes.html'
   })
-  .state('dogEdit', {
-    url:'/dogs/:dogId/edit',
-    templateUrl: 'app/dogs/tmpl/dog-edit.html',
+  .state('guide.icons', {
+    url:'/icons',
+    templateUrl: 'app/modules/tmpl/icons.html'
   })
-
-
-  .state('deliveries', {
-    url:'/deliveries',
-    templateUrl: 'app/deliveries/tmpl/deliveries.html',
-    controller: 'MainCtrl',
-    controllerAs: 'main'
-  }) 
-  .state('deliveriesEdit', {
-    url:'/deliveries/edit',
-    templateUrl: 'app/deliveries/tmpl/deliveries-edit.html',
-  }) 
-
-
-  .state('account', {
-    url:'/account',
-    templateUrl: 'app/account/tmpl/account.html',
-  })
-  .state('account.payment', {
-    url:'/payment',
-    templateUrl: 'app/account/tmpl/account-payment.html',
-  })
-  
-  .state('account.deliveries', {
-    url:'/deliveries',
-    templateUrl: 'app/account/tmpl/account-deliveries.html',
-  })
-  .state('account.deliveriesEdit', {
-    url:'/deliveries/edit',
-    templateUrl: 'app/account/tmpl/account-deliveries-edit.html',
-  })
-
-  .state('account.details', {
-    url:'/details',
-    templateUrl: 'app/account/tmpl/account-details.html',
+  .state('guide.typography', {
+    url:'/typography',
+    templateUrl: 'app/modules/tmpl/typography.html'
   });
-
-
-  // .state('boards', {
-  //   url:'/boards',
-  //   templateUrl: 'app/boards/boards-mdv.tmpl.html',
-  //   controller: 'BoardsCtrl',
-  //   controllerAs: 'ctrl',
-  //   resolve: {
-  //     'currentUser': ['Auth', function (Auth) {
-  //       return Auth.$requireAuth();
-  //     }]
-  //   }
-  // })
-  // .state('notes', {
-  //   url:'/boards/:boardId/notes',
-  //   templateUrl: 'app/notes/notes-mdv.tmpl.html',
-  //   controller: 'NotesCtrl',
-  //   controllerAs: 'ctrl',
-  //   resolve: {
-  //     'currentUser': ['Auth', function (Auth) {
-  //       return Auth.$requireAuth();
-  //     }]
-  //   }
-  // });
 })
 
 .controller('MainCtrl', function ($state, $scope) {
-  var ctrl = this;
-  var pauseOpen = false;
 
-  $scope.openPause = function() {
-    var el  = document.getElementById("panel");
-
-    if (pauseOpen) {
-      pauseOpen = false;
-      el.classList.remove('active');
-    } else {
-      pauseOpen = true;
-      el.classList.add('active');
-    }
-  };
 
 })
 

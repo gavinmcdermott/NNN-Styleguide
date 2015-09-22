@@ -1,0 +1,181 @@
+
+
+
+
+
+/* TILES */
+/*******************/
+.tiles {
+  
+}
+
+.tiles li {
+  overflow: hidden;
+  border-top: 1px solid #E2E2E2;
+  padding: 20px 0;
+}
+
+.tiles li h4 {
+  margin: 0 0 4px 0;
+  line-height: 20px;
+}
+
+.tiles li p {
+  margin: 4px 0 0 0;
+}
+
+.tile-image {
+  margin-right: 20px;
+  float: left;
+}
+
+/*.tiles--standard li {
+  padding: 20px 0;
+}*/
+
+.tiles--large li {
+  padding: 30px 0;
+}
+
+.tiles--light li {
+  border-top: 1px dotted #E2E2E2;
+}
+
+.tile, .tile-body {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LISTS */
+/*******************/
+.list--standard li {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.list--standard li.selected {
+  background-color: #CCECE8;
+}
+
+.list--standard li:hover:not(.selected) {
+  background-color: #EAEAEA;
+}
+
+.list--standard > li a {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #545050;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LISTS */
+/*******************/
+li > a {
+  display: block;
+  line-height: inherit; 
+  height: inherit; 
+}
+
+
+.linear-list {
+  display: block
+}
+.linear-list > li {
+  float: left
+}
+.linear-list > li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+  border-left: 0 none
+}
+
+
+
+
+
+
+
+.border-list {
+  display: block 
+}
+
+.border-list > li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.border-list > li:first-child {
+  border-top: 1px solid #E2E2E2;
+}
+
+.border-list > li > div {
+  padding: 0;
+}
+
+
+
+
+
+
+
+.lead-list {
+  margin-bottom: 30px;
+}
+
+.lead-list > li {
+  border-bottom: 1px dashed #E0E0E0;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.lead-list .start,
+.lead-list .end {
+  border-bottom: 1px solid #FFF;
+}
+
+.lead-list .start {
+  padding-right: 12px;
+}
+
+.lead-list .end {
+  padding-left: 12px;
+}
+
+
+

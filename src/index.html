@@ -6,54 +6,50 @@
     <title>NomNomNow</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:900,600,400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/notices.css">
+    <link rel="stylesheet" href="assets/css/sections-panels.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/tiles-lists.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
   </head>
   <body>
     
-
+    <!-- Header-->
     <header class="main-nav--fixed-wrap">
       <div class="main-nav container--wide border-bottom--light">
         <div class="line lastGroup">
           <nav class="float--left">
             <ul class="linear-list">          
               <li class="main-nav-link">
-                <a class="" href="#dogs">
+                <a href="#">
                   <span class="main-nav-link--logo"></span>
                 </a>
               </li>
               <li class="main-nav-link">
-                <a class="gray align--center pad--lev2 pad--tb0" href="#dogs">Dogs</a>
+                <a ui-sref-active="selected" class="gray align--center pad--lev2 pad--tb0" ui-sref="guide.grid">Styleguide</a>
               </li>
             </ul>
-          </nav>
-
-          <nav class="float--right">
-            <ul class="linear-list">
-              <li class="main-nav-link">
-                <a class="gray align--center pad--lev2 pad--tb0" href="#account/details">Account</a>
-              </li>
-              <li class="nav-separator">
-                <a class="gray--separator align--center pad--lev2 pad--tb0">|</
-              </li>
-              <li class="main-nav-link">
-                <a class="gray align--center pad--lev2 pad--tb0" href="#signup/dogs">Logout</a>
-              </li>
-            </ul>          
           </nav>
         </div>
       </div>
     </header>
-      
-    <div ui-view></div>
-      
+    
+    <!-- Main body -->
+    <div class="container--wide pad--t150 pad--b72">
+      <ui-view />
+    </div>
+
     <!-- Load scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
     <script src="vendor/angular-ui-router.min.js"></script>    
     <script src="app/app.js"></script>
-    <script src="app/account/scripts/accountModule.js"></script>
-    <script src="app/auth/scripts/authModule.js"></script>
-    <script src="app/dogs/scripts/dogsModule.js"></script>
-    <script src="app/deliveries/scripts/deliveriesModule.js"></script>
+    <script src="app/modules/scripts/modulesModule.js"></script>
   </body>
 </html>

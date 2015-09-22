@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE LEAD */
+/*******************/
+
+.page-lead {
+  margin-top: 54px;
+  margin-bottom: 42px;
+}
+
+.page-lead-buttons {
+  margin-top: 10px;
+}
+
+/*.page-lead-separator {
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 30px;
+}*/
+
+
+
+
+
+
+p.page-subtitle {
+  font-size: 24px;
+  letter-spacing: .66px;
+  line-height: 26px;
+}
+
+.page-subtitle a {
+  color: inherit;  
+}
+
+.page-subtitle a:hover {
+  text-decoration: underline;
+}
+
+.page-subtitle .icon {
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 0 8px;
+  color: inherit;
+  background-color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+/*******************/
+.section {
+  margin-bottom: 60px;
+}
+
+/*.section--bordered {
+  border-bottom: 1px dotted #E0E0E0;
+}
+*/
+.sub-section {
+  margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+.panel {
+  -webkit-transition: all 0.15s cubic-bezier(.7, 0, .175, 1) 0s;
+  -moz-transition: all 0.15s cubic-bezier(.7, 0, .175, 1) 0s;
+  transition: all 0.15s cubic-bezier(.7, 0, .175, 1) 0s;
+  background-color: #e0e0e0;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  border-radius: 2px;
+}
+
+.panel.active {
+  opacity: 1;
+  max-height: 5000px;
+  padding: 20px 0;
+}
+
+
+
+
+
+

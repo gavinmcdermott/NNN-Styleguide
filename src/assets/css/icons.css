@@ -1,0 +1,63 @@
+
+
+
+/* BADGES */
+/*******************/
+.badge {
+  display: inline-block;
+  position: relative;
+  background-color: #BDBDBD;
+  color: #FFFFFF;
+  margin: 0 8px;
+  padding: 3px 8px;
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  vertical-align: text-top;
+}
+
+.badge .icon {
+  padding-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.icon--inline {
+  margin-right: 10px;
+  font-size: 12px;
+  /*color: #45CEBD;*/
+}
+
+.icon--large {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+}
+
+.fill--success {
+  /*border: 2px solid #45CEBD;*/
+  /*background-color: #FFF;*/
+  background-color: #45CEBD;
+  /*background-color: #DBF3F0;*/
+  color: #FFF;
+  /*color: #45CEBD;*/
+}
+

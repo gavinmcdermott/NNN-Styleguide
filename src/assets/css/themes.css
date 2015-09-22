@@ -1,0 +1,50 @@
+
+
+/* PRIORITIES */
+/***********************/
+.pri0 {
+  color: #fff;
+  background-color: #5B5B5B;
+  /*background-color: #45CEBD;*/
+  /*-ms-transition: background-color 0.25s ease-in-out 0s;
+  transition: background-color 0.25s ease-in-out 0s;*/
+}
+.pri0:hover,
+.pri0:focus {
+    color: #fff;
+    background-color: #696969
+}
+/*.pri0:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px
+}*/
+/*.pri0:active,
+.pri0.active {
+    color: #ededed;
+    background-color: #5a5a5a
+}*/
+
+
+
+.pri1 {
+  color: #545050;
+  background-color: #E0E0E0;
+}
+.pri1:hover,
+.pri1:focus {
+    color: #1F1F1F;
+    background-color: #CBCBCB
+}
+
+
+.pri0[disabled],
+.pri0.disabled,
+.pri1[disabled],
+.pri1.disabled {
+    pointer-events: none;
+    opacity: .5
+}
+
+
+
+

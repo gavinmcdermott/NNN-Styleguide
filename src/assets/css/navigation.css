@@ -1,0 +1,142 @@
+
+
+
+/* MAIN NAVIGATION */
+/*************************/
+.main-nav {
+  background-color: #fafafa;
+  height: 72px;
+  z-index: 50
+  ;  
+}
+
+.main-nav--fixed-wrap {
+  position: fixed;
+  width: 100%;
+  outline: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.main-nav li {
+  font-size: 14px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.main-nav-link {
+  cursor: pointer;
+  /*-ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;*/
+}
+
+.main-nav-link:hover {
+  background-color: #eee;
+}
+
+/*.main-nav .selected:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 15px;
+  left: 15px;
+  border-bottom: 2px solid #d0d0d0;
+}*/
+
+.main-nav-link:hover a {
+  color: #545050;
+  
+  /*-ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;*/
+}
+
+.main-nav-link--logo {
+  background: url(../images/nom_logo.png) no-repeat;
+  background-size: contain;
+  height: 30px;
+  margin: 0 15px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.logo-page-lead {
+  background: url(../images/nom_logo.png) no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  display: block;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.local-nav {
+  display: block;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 50px;
+}
+
+.local-nav li {
+  padding-bottom: 15px;
+  position: relative;
+  float: left;
+  padding-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+}
+/*.local-nav li:first-child {
+  padding-left: 0;
+}*/
+
+.local-nav-link {
+  cursor: pointer;
+}
+
+.local-nav-link a {
+  color: #545050;
+}
+.local-nav-link a:hover,
+.local-nav-link a.selected {
+  color: #45CEBD;
+}
+
+.local-nav .selected:after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  right: 40px;
+  left: 0px;
+  border-bottom: 2px solid #45CEBD;
+}
+
+
+
+
+
+
+
