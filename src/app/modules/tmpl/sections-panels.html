@@ -1,1 +1,251 @@
-<h1>sections-panels template</h1>
+<div class="line below--12">
+  <div class="lastUnit size1of1">
+    <h1 class="f--bold">Sections & Panels</h1>
+  </div>
+</div>
+
+<div class="line">
+  <div class="lastUnit size1of1">
+    <ul class="nav-local">
+      <li class="nav-local__link">
+        <a class="selected f--reg" href="">Page leads</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Sections & subsections</a>
+      </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Panels</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Page leads -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Page leads</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Page leads where the main title for the page is held, along with any other primary actions (buttons) that affect content on the page as a whole.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+      <p>Notice in this example we also include a page-subtitle link as well. These are used when heading deeper into the app from a top-level area.</p>
+
+      <div class="line">
+
+        <div class="lastUnit size1of1">  
+          <div class="page-lead">
+            <p class="page-subtitle f--bold el--dim"><a href="">Section A</a></p>
+            <h1 class="f--bold">Page title</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="page-lead">
+    <p class="page-subtitle f--bold el--dim"><a href="">Section A</a></p>
+    <h1 class="f--bold">Page title</h1>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Another example</h4>
+      <p>We're using some top-level action buttons in this example.</p>
+
+      <div class="line">
+
+        <div class="lastUnit size1of1">  
+          <div class="page-lead lastGroup">
+            <div class="unit size1of2">
+              <h1 class="f--bold">Page title</h1>
+            </div>
+            <div class="lastUnit size1of2">
+              <div class="page-lead__buttons float--right">
+                <button class="button pri0">Key action</button>
+                <button class="button pri1">Secondary action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="page-lead lastGroup">
+    <div class="unit size1of2">
+      <h1 class="f--bold">Page title</h1>
+    </div>
+    <div class="lastUnit size1of2">
+      <div class="page-lead__buttons float--right">
+        <button class="button pri0">Key action</button>
+        <button class="button pri1">Secondary action</button>
+      </div>
+    </div>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Sections -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Sections & subsections</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Sections are what we use to wrap blocks of related content in the app. Typically they have an <code>h3</code> as a lead in for the <code>section</code>. Within the section, if there are different areas of related content, we use the <code>.sub-section</code> tag paired with an <code>h4</code> title for the content within. This is actually how the <a ui-sref="guide.grid">styleguide</a> is structured.</p>    
+      <p>There is a <code>60px</code> bottom margin between <code>.sections</code>.</p>
+      <p>There is a <code>48px</code> bottom margin between <code>.sub-sections</code>.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+
+        <div class="section">
+          <div class="line below--12">
+            <div class="lastUnit size1of1">
+              <h3 class="f--reg">Section AAA</h3>
+            </div>
+          </div>
+          <div class="line sub-section">
+            <div class="lastUnit size1of1">
+              <h4>Subsection aaa1</h4>
+              <p>Human grade lean beef mince, ox liver and ox heart for high quality proteins and fats. Combined with brown rice and fresh vegetables this recipe</p>
+            </div>
+          </div>
+          <div class="line sub-section">
+            <div class="lastUnit size1of1">
+              <h4>Subsection aaa2</h4>
+              <p>Human grade lean beef mince, ox liver and ox heart for high quality proteins and fats. Combined with brown rice and fresh vegetables this recipe</p>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="line below--12">
+            <div class="lastUnit size1of1">
+              <h3 class="f--reg">Section BBB</h3>
+            </div>
+          </div>
+          <div class="line sub-section">
+            <div class="lastUnit size1of1">
+              <h4>Subsection bbb1</h4>
+              <p>Human grade lean beef mince, ox liver and ox heart for high quality proteins and fats. Combined with brown rice and fresh vegetables this recipe</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="section">
+    <div class="line below--12">
+      <div class="lastUnit size1of1">
+        <h3 class="f--reg">Section AAA</h3>
+      </div>
+    </div>
+    <div class="line sub-section">
+      <div class="lastUnit size1of1">
+        <h4>Subsection aaa1</h4>
+        <p>Human grade lean beef mince, ox liver....</p>
+      </div>
+    </div>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Panels -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Panels</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Panels are typically used to call out specific areas in which the user is to take some kind of action.</p>    
+      <p>- <strong>They are hidden by default, and animate into view</strong>. Thus you need to add an <code>active</code> class in order for them to show up.</p>
+      <p>- They use an <code>h3</code> tag for their header.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="line">
+        <div class="panel active">  
+          <div class="lastUnit size1of1">
+            <h3 class="f--reg">This is a panel header</h3>
+            <p>This is some panel content, and some more content with it.</p>
+            <a class="button pri0">Panel button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="panel active">  
+    <div class="lastUnit size1of1">
+      <h3 class="f--reg">This is a panel header</h3>
+      <p>This is some panel content, and some more content with it.</p>
+      <a class="button pri0">Panel button</a>
+    </div>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
