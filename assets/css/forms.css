@@ -1,16 +1,33 @@
-
-
-
-
-
-
-/* FORMS */
-/*******************/
+/*****************************************/
+/* INPUTS */
+/*****************************************/
 .field-wrap {
   margin: 0;
   clear: both;
   position: relative;
   overflow: visible;
+}
+
+.field-wrap.with-button .button-group {
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+}
+
+.field-wrap.with-button .button {
+  border-radius: 0 2px 2px 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  float: left;
+  border-left: 2px solid #BDBDBD;
+}
+
+.field-wrap.with-button .button + .button {
+  margin-left: 0px;
+  /*border-left: 2px solid #BDBDBD;*/
 }
 
 label,
@@ -200,16 +217,9 @@ textarea[readonly] {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* NATIVE SELECTS */
+/*****************************************/
 .select-wrap {
   position: relative;
   display: inline-block;
@@ -259,21 +269,9 @@ textarea[readonly] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* FAKE (INCREMENTAL BUTTON) INPUTS */
+/*****************************************/
 .fake-input {
   position: relative;
   display: inline-block;
@@ -291,41 +289,13 @@ textarea[readonly] {
   font-weight: 400;
   cursor: default;
 }
-.field-wrap.with-button .button-group {
-  margin: 0;
-  position: absolute;
-  z-index: 2;
-  right: 0px;
-  top: 0px;
-}
-
-.field-wrap.with-button .button {
-  border-radius: 0 2px 2px 0;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
-  float: left;
-  border-left: 2px solid #BDBDBD;
-}
-
-.field-wrap.with-button .button + .button {
-  margin-left: 0px;
-  /*border-left: 2px solid #BDBDBD;*/
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* RADIOS */
+/*****************************************/
 .radio {
   padding: 18px 0 18px 0;
   cursor: pointer;
@@ -373,11 +343,6 @@ input[type="radio"]:checked + span::before {
   border: 8px solid #45CEBD;
 }
 
-.radio .description {
-  position: relative;
-  display: inline-block;
-}
-
 .radio .content {
   padding-left: 40px;
   position: relative;
@@ -395,30 +360,9 @@ input[type="radio"]:checked + span div.content {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
+/* CHECKBOXES */
+/*****************************************/
 .checkbox {
   margin-bottom: 20px;
 }
@@ -428,7 +372,6 @@ input[type="radio"]:checked + span div.content {
   position: absolute;
   display: inline-block;
 }
-
 
 .option-input {
   height: 28px;
@@ -489,193 +432,9 @@ input[type="radio"]:checked + span div.content {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.thumb {
-  width: 84px;
-  height: 84px;
-  display: inline-block;
-  background-color: #E2E2E2;
-  overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box-select {
-  position: relative;
-  border-radius: 4px;
-  padding: 10px;
-  border: 2px solid #E2E2E2;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-bottom: 20px;
-  opacity: .8;
-  cursor: pointer;
-  
-}
-
-.box-select:hover {
-  border-color: #C1C1C1;
-}
-
-.box-select::before,
-.box-select::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-color: transparent;
-  border-style: solid;
-}
-
-.box-select::before {
-  border-width: 25px;
-  border-right-color: #E2E2E2;
-  border-top-color: #E2E2E2;
-}
-
-.box-select::after {
-  border-radius: 2px;
-  border-width: 24px;
-  border-right-color: #E2E2E2;
-  border-top-color: #E2E2E2;
-}
-
-.box-select:hover {
-  opacity: 1;
-}
-
-.box-select:hover::before {
-  border-right-color: #C1C1C1;
-  border-top-color: #C1C1C1;
-}
-
-.box-select:hover::after {
-  border-right-color: #C1C1C1;
-  border-top-color: #C1C1C1;
-}
-
-.box-select.selected::before {
-  border-width: 25px;
-  border-right-color: #45CEBD;
-  border-top-color: #45CEBD;
-}
-
-.box-select.selected::after {
-  border-right-color: #45CEBD;
-  border-top-color: #45CEBD;
-}
-
-.box-select.selected {
-  border-color: #45CEBD;
-  opacity: 1;
-}
-
-.box-select .description {
-  padding: 0 12px;
-  position: absolute;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.box-picker {
-  position: relative;
-  padding: 10px;
-  background-color: #FFF;
-  border: 2px solid #E2E2E2;
-  border-bottom: 0px;
-  border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*****************************************/
 /* BUTTONS */
-/*******************/
+/*****************************************/
 .button-group {
   /*padding-top: 18px;*/
   margin-bottom: 24px;
@@ -711,7 +470,3 @@ input[type="radio"]:checked + span div.content {
 .button a {
   color: inherit;
 }
-
-
-
-

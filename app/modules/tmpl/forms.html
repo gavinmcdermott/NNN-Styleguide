@@ -19,6 +19,9 @@
       <li class="nav-local__link">
         <a class="f--reg" href="">Radios</a>
       </li>
+      <li class="nav-local__link">
+        <a class="f--reg" href="">Checkboxes</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -85,6 +88,8 @@
 <div class="line section">
   <div class="lastUnit size1of1">
 
+  
+    <!-- Text Input -->
     <div class="sub-section">
       <h4>Text input description</h4>
       <p>Basic form text inputs used throughout the app</p>
@@ -115,9 +120,285 @@
       </div>
     </div>
 
+
+    <!-- Fake text input with buttons -->
+    <div class="sub-section">
+      <h4>Increment input description</h4>
+      <p>And incrementing field input used with small incremental values. We don't use them with a lot of values; in which case a <code>select</code> input should be used.</p>
+      <p>- Note the use of the <code>.field-wrap</code> and <code>.with-buttons</code> classes for this input</p>
+      <p>- Since it is not an actual text input, we also use a custom <code>.fake-input</code> class in place of the text input normally used.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Increment input example</h4>
+      <div class="field-wrap with-button">
+        <label for="">Choose meal portion</label>
+        <div class="fake-input">
+          2 and 3/8 cups per meal
+          <span class="button-group">
+            <a href="" class="button pri1 fa fa-minus small"></a>
+            <a href="" class="button pri1 fa fa-plus small"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>Increment input code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="field-wrap with-button">
+    <label for="">Choose meal portion</label>
+    <div class="fake-input">
+      2 and 3/8 cups per meal
+      <span class="button-group">
+        <a href="" class="button pri1 fa fa-minus small"></a>
+        <a href="" class="button pri1 fa fa-plus small"></a>
+      </span>
+    </div>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
   </div>
 </div>
 
 
 
+<!-- SELECTS -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Selects</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>Description</h4>
+      <p>Selects are used when selecting a bunch of possible options. We use the native element for better access on mobile devices.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">Example</h4>
+
+      <div class="field-wrap">
+        <label for="">State</label>
+        <div class="select-wrap">
+          <select>
+            <option value="volvo">CA</option>
+            <option value="saab">NE</option>
+            <option value="mercedes">WI</option>
+          </select>
+          <span class="icon fa fa-chevron-down"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>Code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="field-wrap">
+    <label for="">State</label>
+    <div class="select-wrap">
+      <select>
+        <option value="volvo">CA</option>
+        <option value="saab">NE</option>
+        <option value="mercedes">WI</option>
+      </select>
+      <span class="icon fa fa-chevron-down"></span>
+    </div>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Radios -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Radios</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>No-descriptive-text description</h4>
+      <p>Radios are used when choosing between mutually exclusive options in the app.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">No-descriptive-text example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size2of3">  
+          <label class="radio" for="mittens">
+            <input type="radio" value="mittens" name="quality" id="mittens">
+            <span>Cat</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>No-descriptive-text code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <label class="radio" for="cat">
+    <input type="radio" value="cat" name="quality" id="cat">
+    <span>Cat</span>
+  </label>
+        </xmp>
+      </div>
+    </div>
+
+
+    <!--  -->
+
+    <div class="sub-section">
+      <h4>With-descriptive-text description</h4>
+      <p>This radio can also have a nice little description with it :)</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">With-descriptive-text example</h4>
+
+      <div class="line">
+
+        <div class="lastUnit size2of3">  
+          <label class="radio" for="doggy">
+            <input type="radio" value="doggy" name="quality" id="doggy">
+            <span>
+              <span>Dog</span>
+              <span class="content">
+                <p class="nomargin">Includes beef, carrots, potatoes, eggs, etc., and a custom vet-formulated nutrient blend and some other things too</p>  
+              </span>
+            </span>
+          </label>    
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>With-descriptive-text code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <label class="radio" for="dog">
+    <input type="radio" value="dog" name="quality" id="dog">
+    <span>
+      <span>Dog</span>
+      <span class="content">
+        <p class="nomargin">Includes beef, carrots, potatoes, eggs, etc., and a custom vet-formulated nutrient blend and some other things too</p>  
+      </span>
+    </span>
+  </label>    
+        </xmp>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- CHECKBOXES -->
+<div class="line below--12">
+  <div id="sizes" class="lastUnit size1of1">
+    <h3 class="f--reg">Checkboxes</h3>
+  </div>
+</div>
+
+<div class="line section">
+  <div class="lastUnit size1of1">
+
+    <div class="sub-section">
+      <h4>No-descriptive-text description</h4>
+      <p>Checkboxes are pretty self explanatory...</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">No-descriptive-text example</h4>
+
+      <div class="line">
+        
+        <label class="checkbox">
+          <input type="checkbox" class="option-input" />
+          <span>This has no descriptive text</span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>No-descriptive-text code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <label class="checkbox">
+    <input type="checkbox" class="option-input" />
+    <span>This checkbox has no descriptive text</span>
+  </label>
+        </xmp>
+      </div>
+    </div>
+
+
+    <!--  -->
+
+    <div class="sub-section">
+      <h4>With-descriptive-text description</h4>
+      <p>Checkboxes can also have descriptions.</p>    
+    </div>
+
+    <div class="sub-section">
+      <h4 class="sg-example-divider">With-descriptive-text example</h4>
+
+      <div class="line">
+        
+  <label class="checkbox">
+    <input type="checkbox" class="option-input" checked />
+    <span>I accept you, always, NomNom</span>
+    <p class="description">This is some descriptive text with it</p>
+  </label>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>With-descriptive-text code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <label class="checkbox">
+    <input type="checkbox" class="option-input" checked />
+    <span>I accept you, always, NomNom</span>
+    <p class="description">This is some descriptive text with it</p>
+  </label>
+        </xmp>
+      </div>
+    </div>
+  
+
+  </div>
+</div>
 
