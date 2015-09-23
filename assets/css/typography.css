@@ -86,3 +86,8 @@ xmp.code {
 .el--dim {
   opacity: .75 !important;
 }
+
+.align--center {
+  text-align: center;
+}
+

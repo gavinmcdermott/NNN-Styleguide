@@ -125,19 +125,19 @@
     <div class="sub-section">
       <h4>Increment input description</h4>
       <p>And incrementing field input used with small incremental values. We don't use them with a lot of values; in which case a <code>select</code> input should be used.</p>
-      <p>- Note the use of the <code>.field-wrap</code> and <code>.with-buttons</code> classes for this input</p>
+      <p>- Note the use of the <code>.field-wrap--with-button</code> class for this input</p>
       <p>- Since it is not an actual text input, we also use a custom <code>.fake-input</code> class in place of the text input normally used.</p>
     </div>
 
     <div class="sub-section">
       <h4 class="sg-example-divider">Increment input example</h4>
-      <div class="field-wrap with-button">
+      <div class="field-wrap field-wrap--with-button">
         <label for="">Choose meal portion</label>
         <div class="fake-input">
           2 and 3/8 cups per meal
           <span class="button-group">
-            <a href="" class="button pri1 fa fa-minus small"></a>
-            <a href="" class="button pri1 fa fa-plus small"></a>
+            <a href="" class="button pri1 fa fa-minus f--small"></a>
+            <a href="" class="button pri1 fa fa-plus f--small"></a>
           </span>
         </div>
       </div>
@@ -153,8 +153,8 @@
     <div class="fake-input">
       2 and 3/8 cups per meal
       <span class="button-group">
-        <a href="" class="button pri1 fa fa-minus small"></a>
-        <a href="" class="button pri1 fa fa-plus small"></a>
+        <a href="" class="button pri1 fa fa-minus f--small"></a>
+        <a href="" class="button pri1 fa fa-plus f--small"></a>
       </span>
     </div>
   </div>
@@ -342,7 +342,7 @@
       <div class="line">
         
         <label class="checkbox">
-          <input type="checkbox" class="option-input" />
+          <input type="checkbox" class="checkbox__option-input" />
           <span>This has no descriptive text</span>
         </label>
 
@@ -355,7 +355,7 @@
       <div class="line">
         <xmp class="code"> 
   <label class="checkbox">
-    <input type="checkbox" class="option-input" />
+    <input type="checkbox" class="checkbox__option-input" />
     <span>This checkbox has no descriptive text</span>
   </label>
         </xmp>
@@ -376,7 +376,7 @@
       <div class="line">
         
   <label class="checkbox">
-    <input type="checkbox" class="option-input" checked />
+    <input type="checkbox" class="checkbox__option-input" checked />
     <span>I accept you, always, NomNom</span>
     <p class="description">This is some descriptive text with it</p>
   </label>
@@ -390,7 +390,7 @@
       <div class="line">
         <xmp class="code"> 
   <label class="checkbox">
-    <input type="checkbox" class="option-input" checked />
+    <input type="checkbox" class="checkbox__option-input" checked />
     <span>I accept you, always, NomNom</span>
     <p class="description">This is some descriptive text with it</p>
   </label>
