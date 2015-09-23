@@ -42,9 +42,9 @@ angular.module('NNN', [
     url:'/utils',
     templateUrl: 'app/modules/tmpl/utils.html'
   })
-  .state('guide.themes', {
-    url:'/themes',
-    templateUrl: 'app/modules/tmpl/themes.html'
+  .state('guide.priorities', {
+    url:'/priorities',
+    templateUrl: 'app/modules/tmpl/priorities.html'
   })
   .state('guide.icons', {
     url:'/icons',

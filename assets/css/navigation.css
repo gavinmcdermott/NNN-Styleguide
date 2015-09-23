@@ -42,6 +42,10 @@
   border-bottom: 2px solid #d0d0d0;
 }*/
 
+.nav-main__link a {
+  color: #ADADAD;
+}
+
 .nav-main__link:hover a {
   color: #545050;  
   /*-ms-transition: all 0.25s ease-in-out 0s;
