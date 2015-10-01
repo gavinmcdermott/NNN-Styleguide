@@ -123,8 +123,8 @@ li > a {
 }
 
 .bordered-list > li {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #E2E2E2;
 }
 
@@ -135,35 +135,4 @@ li > a {
 .bordered-list > li > div {
   padding: 0;
 }
-
-
-
-/*****************************************/
-/* STATS (VERT ALIGN) LIST */
-/*****************************************/
-
-.stats-list {
-  margin-bottom: 30px;
-}
-
-.stats-list > li {
-  border-bottom: 1px dashed #E0E0E0;
-  padding-bottom: 4px;
-  margin-bottom: 10px;
-}
-
-.stats-list .start,
-.stats-list .end {
-  border-bottom: 1px solid #FFF;
-}
-
-.stats-list .start {
-  padding-right: 12px;
-}
-
-.stats-list .end {
-  padding-left: 12px;
-}
-
-
 

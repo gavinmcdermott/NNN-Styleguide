@@ -18,11 +18,13 @@
 
 .field-wrap--with-button .button {
   border-radius: 0 2px 2px 0;
-  height: 32px;
-  line-height: 32px;
+  height: 36px;
+  color: #5B5E61;
+  line-height: 40px;
   padding: 0 18px;
   float: left;
-  border-left: 2px solid #BDBDBD;
+  border-left: 1px solid #C8C8C8;
+  font-size: 11px;
 }
 
 .field-wrap--with-button .button + .button {
@@ -36,11 +38,11 @@ select,
 textarea {
   font-size: 15px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 label {
-  color: #484848;
+  /*color: #484848;*/
   font-weight: 400;
   display: block;
   max-width: 635px;
@@ -110,10 +112,12 @@ input[type="color"],
   border-radius: 2px;
   min-width: 50px;
   max-width: 625px;
+  font-weight: 300;
   width: 100%;
   min-height: 36px;
   background-color: #fff;
-  border: 2px solid #E0E0E0;
+  border: 1px solid #C8C8C8;
+  color: #5B5E61;
   margin: 0 0 20px 0;
 }
 
@@ -139,7 +143,7 @@ input[type="tel"]:hover,
 input[type="color"]:hover,
 .uneditable-input:hover,
 .faux-file:hover {
-    border-color: #C1C1C1
+    border-color: #a0a0a0;
 }
 
 textarea:focus,
@@ -160,7 +164,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus,
 .faux-file:focus {
-    border: 2px solid #45CEBD;
+    border: 1px solid #45CEBD;
     outline: none
 }
 
@@ -182,7 +186,7 @@ input[type="tel"].invalid,
 input[type="color"].invalid,
 .uneditable-input.invalid,
 .faux-file.invalid {
-  border: 2px solid #e85c41
+  border: 1px solid #e85c41
 }
 
 input[type="radio"],
@@ -231,17 +235,18 @@ textarea[readonly] {
   max-width: 625px; 
   width: 100%;
   min-height: 36px;
-  background-color: #E0E0E0;
-  /*border: 2px solid #E0E0E0;*/
+  background-color: #E9E9E9;
+  /*border: 1px solid #E0E0E0;*/
   margin: 0 0 20px 0;
   font-weight: 400;
   cursor: pointer;
+  color: #5B5E61;
 }
 
 .select-wrap .icon {
   position: absolute;
-  line-height: 36px;
-  font-size: 12px;
+  line-height: 40px;
+  font-size: 11px;
   right: 8px;
 }
 
@@ -257,13 +262,15 @@ textarea[readonly] {
   -webkit-appearance: none;
   cursor: pointer;
   z-index: 2;
+  /*font-weight: 300;*/
+  color: #5B5E61;
 }
 
 .select-wrap select:focus {
   height: 36px;
   line-height: 32px;
   padding-left: 8px;
-  border: 2px solid #45CEBD;
+  border: 1px solid #45CEBD;
   outline: none
 }
 
@@ -278,13 +285,14 @@ textarea[readonly] {
   padding: 4px 9px 0 10px;
   margin-bottom: 30px;
   vertical-align: middle;
+  line-height: 28px;
   border-radius: 2px;
   min-width: 50px;
   max-width: 625px; 
   width: 100%;
   min-height: 36px;
-  background-color: #E0E0E0;
-  border: 2px solid #E0E0E0;
+  background-color: #E9E9E9;
+  /*border: 1px solid #E0E0E0;*/
   margin: 0 0 20px 0;
   font-weight: 400;
   cursor: default;
@@ -328,22 +336,23 @@ input[type="radio"] + span::before {
   height: 28px;
   vertical-align: -9px;
   border-radius: 50px;
-  border: 2px solid #E0E0E0;
+  border: 1px solid #C8C8C8;
   margin-right: 10px;
 }
 
 input[type="radio"]:hover + span::before {
   background: #FFF;
-  border: 2px solid #CBCBCB;
+  border: 1px solid #a0a0a0;
 }
 
 
 input[type="radio"]:checked + span::before {
   background: #FFF;
-  border: 8px solid #45CEBD;
+  border: 10px solid #45CEBD;
 }
 
 .radio .content {
+  font-weight: 300;
   padding-left: 40px;
   position: relative;
   display: block;
@@ -376,7 +385,7 @@ input[type="radio"]:checked + span div.content {
 .checkbox__option-input {
   height: 28px;
   width: 28px;
-  border: 2px solid #E0E0E0;
+  border: 1px solid #C8C8C8;
 
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
@@ -407,9 +416,9 @@ input[type="radio"]:checked + span div.content {
 .checkbox__option-input:checked::before {
   height: 28px;
   padding-top: 4px;
-  width: 24px;
+  width: 26px;
   position: absolute;
-  content: '\2716';
+  content: '\2713';
   display: inline-block;
   font-size: 16px;
   text-align: -webkit-center;
@@ -425,6 +434,7 @@ input[type="radio"]:checked + span div.content {
 }
 
 .checkbox .description {
+  font-weight: 300;
   padding-left: 40px;
   position: relative;
   display: block;

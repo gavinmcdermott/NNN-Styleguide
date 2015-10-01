@@ -3,7 +3,7 @@
 /*****************************************/
 .pri0 {
   color: #fff;
-  background-color: #5B5B5B;
+  background-color: #45CEBD;
   /*background-color: #45CEBD;*/
   /*-ms-transition: background-color 0.25s ease-in-out 0s;
   transition: background-color 0.25s ease-in-out 0s;*/
@@ -11,7 +11,7 @@
 .pri0:hover,
 .pri0:focus {
     color: #fff;
-    background-color: #696969
+    background-color: #38B9A9
 }
 /*.pri0:focus {
     outline: 1px dotted #959595;
@@ -26,7 +26,7 @@
 
 
 .pri1 {
-  color: #545050;
+  color: #5B5E61;
   background-color: #E0E0E0;
 }
 .pri1:hover,

@@ -3,7 +3,7 @@
 /*****************************************/
 .page-lead {
   margin-top: 54px;
-  margin-bottom: 42px;
+  /*margin-bottom: 42px;*/
 }
 .page-lead:before,
 .page-lead:after {
@@ -15,7 +15,7 @@
 }
 
 .page-lead__buttons {
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 
@@ -23,7 +23,7 @@
 /*****************************************/
 /* PAGE SUBTITLES */
 /*****************************************/
-p.page-subtitle {
+/*p.page-subtitle {
   font-size: 24px;
   letter-spacing: .66px;
   line-height: 26px;
@@ -46,7 +46,7 @@ p.page-subtitle {
   color: inherit;
   background-color: inherit;
 }
-
+*/
 
 
 /*****************************************/

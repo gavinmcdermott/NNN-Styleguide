@@ -54,6 +54,26 @@ angular.module('NNN', [
     url:'/typography',
     templateUrl: 'app/modules/tmpl/typography.html'
   });
+
+
+  $stateProvider
+  .state('demo', {
+    url:'/demo',
+    templateUrl: 'app/demo/tmpl/demo-index.html',
+  })
+  .state('dog', {
+    url:'/dog',
+    abstract: true,
+    templateUrl: 'app/demo/tmpl/dog.html'
+  })
+  .state('dog.meals', {
+    url:'/meals',
+    templateUrl: 'app/demo/tmpl/dog-meals.html'
+  })
+  .state('dog.info', {
+    url:'/info',
+    templateUrl: 'app/demo/tmpl/dog-info.html'
+  });
 })
 
 .controller('MainCtrl', function ($state, $scope) {

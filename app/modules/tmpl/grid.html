@@ -1,6 +1,6 @@
-<div class="line below--24">
+<div class="line">
   <div class="lastUnit size1of1">
-    <h1 class="f--bold">Grid system</h1>
+    <h1>Grid system</h1>
   </div>
 </div>
 
@@ -11,10 +11,10 @@
         <a class="selected f--reg" href="">Grid sizes</a>
       </li>
       <li class="nav-local__link">
-        <a class="f--reg" href="">Nesting and gutters</a>
+        <a href="">Nesting and gutters</a>
       </li>
       <li class="nav-local__link">
-        <a class="f--reg" href="">Screen resizing</a>
+        <a href="">Screen resizing</a>
       </li>
     </ul>
   </div>
@@ -23,9 +23,9 @@
 
 
 <!-- GRID EXAMPLES -->
-<div class="line below--12">
+<div class="line">
   <div id="sizes" class="lastUnit size1of1">
-    <h3 class="f--reg">Grid sizes</h3>
+    <h3>Grid sizes</h3>
   </div>
 </div>
 
@@ -33,14 +33,14 @@
   <div class="lastUnit size1of1">
     
     <div class="sub-section">
-      <h4>Size 1 of 1</h4>
+      <h4 class="f--reg">Size 1 of 1</h4>
       <div class="lastUnit size1of1 sg-unit">
         <p class="sg-unit-fill">1 of 1</p>
       </div>
     </div>
 
     <div class="sub-section">
-      <h4>Size 1 of 2</h4>
+      <h4 class="f--reg">Size 1 of 2</h4>
       <div class="unit size1of2 sg-unit">
         <p class="sg-unit-fill">1 of 2</p>
       </div>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="sub-section">
-      <h4>Size 1 of 3</h4>
+      <h4 class="f--reg">Size 1 of 3</h4>
       <div class="unit size1of3 sg-unit">
         <p class="sg-unit-fill">1 of 3</p>
       </div>
@@ -63,7 +63,7 @@
     </div>
 
     <div class="sub-section">
-      <h4>Size 1 of 4</h4>
+      <h4 class="f--reg">Size 1 of 4</h4>
       <div class="unit size1of4 sg-unit">
         <p class="sg-unit-fill">1 of 4</p>
       </div>
@@ -79,7 +79,7 @@
     </div>
 
     <div class="sub-section">
-      <h4>Size 1 of 8</h4>
+      <h4 class="f--reg">Size 1 of 8</h4>
       <div class="unit size1of8 sg-unit">
         <p class="sg-unit-fill">1</p>
       </div>
@@ -107,7 +107,7 @@
     </div>
 
     <div class="sub-section">
-      <h4>Code snippet</h4>
+      <h4 class="f--reg">Code snippet</h4>
 
       <p>When using the grid, wrap the columns using a <code>line</code> and use <code>lastUnit</code> for the last column. We're using <a href="https://github.com/stubbornella/oocss/wiki/grids#base-classes">Nicole Sullivan's</a> OOCSS grid naming conventions.</p>
       
@@ -128,9 +128,9 @@
 
 
 <!-- NESTING / GUTTERS -->
-<div class="line below--12">
+<div class="line">
   <div id="#nesting" class="lastUnit size1of1">
-    <h3 class="f--reg">Nesting and gutters</h3>
+    <h3>Nesting and gutters</h3>
   </div>
 </div>
 
@@ -138,7 +138,7 @@
   <div class="lastUnit size1of1">
 
   <div class="line sub-section">
-    <h4>Basic nesting example</h4>
+    <h4 class="f--reg">Basic nesting example</h4>
     <p>Notice that we want to eliminate the gutters on these nested grids, otherwise we'd have a 30px padding within each nested item. <strong>This odd behvior messes with readability, consistency and looks sloppy</strong>.</p>
     <p>To avoid this, we use the <strong><code>group</code></strong> class to eliminate gutters on the parent element of the columns being nested.</p>
     <br>
@@ -159,7 +159,7 @@
   </div>
 
   <div class="line sub-section">
-    <h4>Code snippet</h4>
+    <h4 class="f--reg">Code snippet</h4>
     <xmp class="code">
   <div class="unit size1of3"></div>
   <div class="lastGroup size2of3">
@@ -170,7 +170,7 @@
   </div>
 
   <div class="line sub-section">
-    <h4>Deeper nesting example</h4>
+    <h4 class="f--reg">Deeper nesting example</h4>
     <div class="group size1of2 sg-unit">
       <div class="unit size1of2 sg-unit sg-fill--gray">
         <p class="sg-unit-fill">1 of 2</p>
@@ -190,7 +190,7 @@
   </div>
 
   <div class="line sub-section">
-    <h4>Code snippet</h4>
+    <h4 class="f--reg">Code snippet</h4>
     <xmp class="code">
   <div class="group size1of2">
     <div class="unit size1of2"></div>
@@ -209,9 +209,9 @@
 
 
 <!-- RESPONSIVENESS -->
-<div class="line below--12">
+<div class="line">
   <div id="#resize" class="lastUnit size1of1">
-    <h3 class="f--reg">Screen resizing</h3>
+    <h3>Screen resizing</h3>
   </div>
 </div>
 
@@ -221,7 +221,7 @@
     <p>Here's the behavior you can expect from your grid on different screen sizes.</p>    
 
     <ul class="bordered-list">
-      <li class="fill--light size1of1 lastGroup">
+      <li class="fill--lightgray size1of1 lastUnit">
         <div class="unit size2of8"><strong>CSS Class</strong></div>
         <div class="unit size2of8"><strong>Less than 640px</strong></div>
         <div class="unit size2of8"><strong>641px to 959px</strong></div>

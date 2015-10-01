@@ -36,8 +36,11 @@
               <li class="nav-main__link">
                 <a ui-sref="guide.grid"><span class="logo logo__nav-main logo--small"></span></a>
               </li>
-              <li class="nav-main__link">
+              <li class="nav-main__link" ui-sref-active="selected">
                 <a class="gray align--center pad--lev2 pad--tb0" ui-sref="guide.grid">Styleguide</a>
+              </li>
+              <li class="nav-main__link" ui-sref-active="selected">
+                <a class="gray align--center pad--lev2 pad--tb0" ui-sref="demo">Demo app</a>
               </li>
             </ul>
           </nav>
@@ -54,6 +57,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
     <script src="vendor/angular-ui-router.min.js"></script>    
     <script src="app/app.js"></script>
+    <script src="app/demo/scripts/demoModule.js"></script>
     <script src="app/modules/scripts/modulesModule.js"></script>
   </body>
 </html>
