@@ -100,11 +100,17 @@
 .notice--warn {
   background-color: #FDF4E2;
   color: #756034;
+  margin-bottom: 30px;
 }
 .notice.active {
   padding: 20px 20px 10px 20px;
   margin: 20px 0 10px 0;
 }
+
+.notice--warn.active {
+margin-bottom: 30px
+}
+
 
 
 

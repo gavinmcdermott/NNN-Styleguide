@@ -99,7 +99,7 @@ angular.module('NNN', [
     var el  = document.getElementById("panel");
     var elWarn  = document.getElementById("warn");
     elWarn.classList.add('active');
-    // el.classList.remove('active');
+    el.classList.remove('active');
     $scope.paused = true;
   };
 
