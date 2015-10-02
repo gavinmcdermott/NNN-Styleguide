@@ -78,6 +78,14 @@
   padding-bottom: 0 !important;
 }
 
+.pad--t12 {
+  padding-top: 12px !important;
+}
+
+.pad--t24 {
+  padding-top: 24px !important;
+}
+
 .pad--b6 {
   padding-bottom: 6px !important;
 }

@@ -56,7 +56,6 @@
 .unit .bordered,
 .lastGroup .bordered,
 .group .bordered {
-  border-top: 1px solid #E2E2E2;
   margin-left: 15px;
   margin-right: 15px;
   padding-top: 20px;
@@ -64,6 +63,12 @@
   border-bottom: 1px solid #E2E2E2;
 }
 
+.lastUnit .bordered--top,
+.unit .bordered--top,
+.lastGroup .bordered--top,
+.group .bordered--top {
+  border-top: 1px solid #E2E2E2;
+}
 
 
 

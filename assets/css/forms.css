@@ -308,7 +308,7 @@ textarea[readonly] {
   padding: 18px 0 18px 0;
   cursor: pointer;
   /*margin-bottom: 12px;*/
-  border-bottom: 1px solid #D8D8D8;
+  /*border-bottom: 1px solid #D8D8D8;*/
 }
 
 .radio-group:first-child {
@@ -373,7 +373,7 @@ input[type="radio"]:checked + span div.content {
 /* CHECKBOXES */
 /*****************************************/
 .checkbox {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .checkbox span {

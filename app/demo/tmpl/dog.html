@@ -1,17 +1,45 @@
 <div class="line">
   <div class="lastGroup size1of1">  
+    <div id="warn" class="notice notice--warn">
+      <p><strong>Hannah’s meal delivery is paused.</strong> To receive meals again, you’ll need to turn delivery back on.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="line">
+  <div class="lastGroup size1of1">  
     <div class="page-lead lastGroup">
       <div class="unit size1of2">
         <h1 class="">Hannah</h1>
       </div>
       <div class="lastUnit size1of2">
         <div class="page-lead__buttons float--right">
-          <button class="button pri1">Pause deliveries</button>
+          <button ng-hide="paused" class="button pri1" ng-click="openPause()">Pause deliveries</button>
+          <button ng-show="paused" class="button pri0" ng-click="stopPause()">Turn deliveries back on</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="line">
+  <div id="panel" class="panel">
+    <div class="lastGroup size1of1 align--center">
+        <h3 ng-hide="paused" class="below--12">Want to pause deliveries? We've got you covered.</h3>
+        <h3 ng-show="paused" class="below--12">Your deliveries are now paused!</h3>
+        <div ng-hide="paused" class="center--h size3of4 below--24">
+          <p>Confirm pausing your food deliveries with the button below. </p>
+          <p><strong>You will not be charged during your pause</strong>, and you start back up with just one click.</p>
+        </div>
+        <button ng-hide="paused" class="button pri0 center--h" ng-click="pauseThings()">Yes, please pause my deliveries</button>
+        <a ng-show="paused" class="center--h" ng-click="openPause()">Thanks, got it</a>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="line">
   <div class="lastUnit size1of1">

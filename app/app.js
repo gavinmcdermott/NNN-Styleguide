@@ -64,6 +64,8 @@ angular.module('NNN', [
   .state('dog', {
     url:'/dog',
     abstract: true,
+    controller: 'MainCtrl',
+    controllerAs: 'main',
     templateUrl: 'app/demo/tmpl/dog.html'
   })
   .state('dog.meals', {
@@ -77,7 +79,40 @@ angular.module('NNN', [
 })
 
 .controller('MainCtrl', function ($state, $scope) {
+  var ctrl = this;
+  var pauseOpen = false;
+  $scope.paused = false;
 
+  $scope.openPause = function() {
+    var el  = document.getElementById("panel");
+
+    if (pauseOpen) {
+      pauseOpen = false;
+      el.classList.remove('active');
+    } else {
+      pauseOpen = true;
+      el.classList.add('active');
+    }
+  };
+
+  $scope.pauseThings = function() {
+    var el  = document.getElementById("panel");
+    var elWarn  = document.getElementById("warn");
+    elWarn.classList.add('active');
+    // el.classList.remove('active');
+    $scope.paused = true;
+  };
+
+  $scope.stopPause = function() {
+    var elWarn  = document.getElementById("warn");
+    elWarn.classList.remove('active');
+    $scope.paused = false;
+  };
+
+  $scope.showChange = function() {
+    var el  = document.getElementById("meal");
+    el.classList.add('active');
+  };
 
 })
 
