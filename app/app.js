@@ -114,6 +114,32 @@ angular.module('NNN', [
     el.classList.add('active');
   };
 
+  var AAAon = false;
+  var BBBon = false;
+
+  $scope.toggleChangeSchedAAA = function() {
+    var el  = document.getElementById("AAA");
+    console.log('AAA');
+    if (AAAon) {
+      AAAon = false;
+      el.classList.remove('active');
+    } else {
+      AAAon = true;
+      el.classList.add('active');
+    }
+  };
+
+  $scope.toggleChangeSchedBBB = function() {
+    var el  = document.getElementById("BBB");
+    if (BBBon) {
+      BBBon = false;
+      el.classList.remove('active');
+    } else {
+      BBBon = true;
+      el.classList.add('active');
+    }
+  };
+
 })
 
 .run(function ($rootScope, $state) {

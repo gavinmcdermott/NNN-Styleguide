@@ -69,23 +69,40 @@
     <div class="bordered selfclear">
       <div class="group size1of2">
         
-        <label class="checkbox">
+        <label class="checkbox" ng-click="toggleChangeSchedAAA()">
           <input type="checkbox" class="checkbox__option-input" checked />
-          <span>Mornings</span>
-          <p class="description">Make sure this is checked if you’re feeding Hannah NomNomNow for breakfast.</p>
+          <span ng-click="toggleChangeSchedAAA()">Mornings</span>
+          <p class="description" ng-click="toggleChangeSchedAAA()">Make sure this is checked if you’re feeding Hannah NomNomNow for breakfast.</p>
         </label>
 
       </div>
 
       <div class="lastUnit size1of2">
           
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox__option-input" checked />
-          <span>Evenings</span>
-          <p class="description">Make sure this is checked if you’re feeding Hannah NomNomNow for dinner.</p>
+        <label class="checkbox" ng-click="toggleChangeSchedBBB()">
+          <input type="checkbox" class="checkbox__option-input" checked  />
+          <span ng-click="toggleChangeSchedBBB()">Evenings</span>
+          <p class="description" ng-click="toggleChangeSchedBBB()">Make sure this is checked if you’re feeding Hannah NomNomNow for dinner.</p>
         </label>
 
       </div>
+
+      <div class="line">
+        <div class="lastGroup size1of1">  
+          <div id="AAA" class="notice notice--info">
+            <p><strong>Pending meal change:</strong> Hannah would no longer eat Nom in mornings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="lastGroup size1of1">  
+          <div id="BBB" class="notice notice--info">
+            <p><strong>Pending meal change:</strong> Hannah would no longer eat Nom in evenings.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
