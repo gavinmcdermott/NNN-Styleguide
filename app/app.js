@@ -61,6 +61,29 @@ angular.module('NNN', [
     url:'/demo',
     templateUrl: 'app/demo/tmpl/demo-index.html',
   })
+
+  .state('signup', {
+    url:'/signup',
+    abstract: true,
+    templateUrl: 'app/demo/tmpl/signup.html'
+  })
+  .state('signup.1', {
+    url:'/1',
+    templateUrl: 'app/demo/tmpl/signup1.html'
+  })
+  .state('signup.2', {
+    url:'/2',
+    templateUrl: 'app/demo/tmpl/signup2.html'
+  })
+  .state('signup.3', {
+    url:'/3',
+    templateUrl: 'app/demo/tmpl/signup3.html'
+  })
+  .state('signup.4', {
+    url:'/4',
+    templateUrl: 'app/demo/tmpl/signup4.html'
+  })
+
   .state('dog', {
     url:'/dog',
     abstract: true,
@@ -77,6 +100,16 @@ angular.module('NNN', [
     templateUrl: 'app/demo/tmpl/dog-info.html'
   });
 })
+
+
+
+
+
+
+
+
+
+
 
 .controller('MainCtrl', function ($state, $scope) {
   var ctrl = this;
@@ -143,6 +176,9 @@ angular.module('NNN', [
 })
 
 .run(function ($rootScope, $state) {
+
+  $rootScope.$state = $state;
+
   $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
     event.preventDefault();
     if (error === 'AUTH_REQUIRED') {

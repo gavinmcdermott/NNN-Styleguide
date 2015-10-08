@@ -27,7 +27,7 @@
   <body>
     
     <!-- Header-->
-    <header class="nav-main__fixed-wrap">
+    <header class="nav-main__fixed-wrap" ng-hide="$state.includes('signup')">
       <!-- Inner wrapper -->
       <div class="container--wide nav-main border__bottom--light">
         <div class="line">
@@ -49,7 +49,11 @@
     </header>
     
     <!-- Main body -->
-    <div class="container--wide pad__main-page">
+    <div class="container--wide pad__main-page" ng-hide="$state.includes('signup')">
+      <ui-view />
+    </div>
+
+    <div class="container--wide pad__signup-flow" ng-show="$state.includes('signup')">
       <ui-view />
     </div>
 

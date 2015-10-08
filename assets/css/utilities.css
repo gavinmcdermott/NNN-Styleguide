@@ -15,6 +15,10 @@
   margin-bottom: 24px !important;
 }
 
+.below--30 {
+  margin-bottom: 30px !important;
+}
+
 .below--36 {
   margin-bottom: 36px !important;
 }
@@ -31,9 +35,18 @@
   margin-bottom: 60px !important; 
 }
 
+.below--72 {
+  margin-bottom: 72px !important; 
+}
+
 /* Padding */
 .pad__main-page {
   padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.pad__signup-flow {
+  padding-top: 42px;
   padding-bottom: 72px;
 }
 
@@ -67,6 +80,10 @@
 
 .pad--l0 {
   padding-left: 0 !important;
+}
+
+.pad--l24 {
+  padding-left: 24px;  
 }
 
 .pad--r0 {
@@ -135,6 +152,7 @@
 
 .full--width {
   width: 100%;
+  max-width: 100%;
 }
 
 .full--height {
@@ -182,6 +200,10 @@
   float:none !important
 }
 
+.block {
+  display: block !important;
+}
+
 .inline {
   display: inline-block !important;
 }
@@ -206,6 +228,9 @@
   color: #FFF;
 }
 
+.fill--light {
+  background-color: #FFF;
+}
 
 
 

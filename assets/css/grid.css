@@ -51,26 +51,33 @@
   width: auto
 }
 
-
-.lastUnit .bordered,
-.unit .bordered,
-.lastGroup .bordered,
-.group .bordered {
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #E2E2E2;
-}
-
-.lastUnit .bordered--top,
-.unit .bordered--top,
-.lastGroup .bordered--top,
-.group .bordered--top {
+.lastUnit .unit__topBorder,
+.unit .unit__topBorder {
+  padding-top: 30px;
   border-top: 1px solid #E2E2E2;
 }
 
+.lastUnit .unit__bottomBorder,
+.unit .unit__bottomBorder {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E2E2E2;
+}
 
+.lastGroup .group__topBorder,
+.group .group__topBorder {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 30px;
+  border-top: 1px solid #E2E2E2;
+}
+
+.lastGroup .group__bottomBorder,
+.group .group__bottomBorder {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 30px;
+}
 
 .size8of8 {
   width: 100%
