@@ -100,7 +100,7 @@ li > a {
   text-decoration: underline;
 }
 
-.linear-list > li:first-child a {
+.linear-list > li:first-child:not(.nav-main__link) a {
   padding-left: 0;
 }
 

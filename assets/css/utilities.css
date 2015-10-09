@@ -238,6 +238,10 @@
 /* SHAPES */
 /*****************************************/
 
+.noround {
+  border-radius: 0px;
+}
+
 .noround--tr {
   -webkit-border-top-right-radius: 0px !important;
   -moz-border-radius-topright: 0px !important;

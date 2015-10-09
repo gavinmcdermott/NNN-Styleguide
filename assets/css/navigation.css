@@ -2,7 +2,7 @@
 /* MAIN NAVIGATION */
 /*****************************************/
 .nav-main {
-  background-color: #FBFBFB;
+  /*background-color: #f0f0f0;*/
   height: 72px;
   position: relative;
   z-index: 50;  
@@ -16,12 +16,18 @@
   right: 0;
   left: 0;
   z-index: 50;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .nav-main li {
   font-size: 14px;
   line-height: 72px;
   font-weight: 400;
+}
+
+.nav-main li.float--right {
+  float: right;
 }
 
 .nav-main__link {
@@ -41,7 +47,7 @@
   bottom: 0;
   right: 15px;
   left: 15px;
-  border-bottom: 3px solid #E2E2E2;
+  border-bottom: 2px solid #E2E2E2;
 }
 
 .nav-main__link a {
@@ -56,6 +62,11 @@
 
 .nav-main__link.selected a {
   color: #5B5E61;
+}
+
+.nav-main__link a .icon--inline {
+  font-size: 10px;
+  margin-left: 8px; 
 }
 
 .nav-main .linear-list li:hover {

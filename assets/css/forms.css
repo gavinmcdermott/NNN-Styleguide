@@ -462,8 +462,6 @@ input[type="radio"] + label {
   margin-bottom: 12px;
 }
 
-
-
 input[type="radio"] + label + .radio-content--reveal {
   display: none;
   opacity: .3;
@@ -553,12 +551,108 @@ input[type="radio"]:checked + label + .radio-content--reveal {
   position: absolute;
 }
 
-.checkbox .description {
+.checkbox .checkbox-content {
   font-weight: 300;
   padding-left: 40px;
   position: relative;
   display: block;
 }
+
+.checkbox + .checkbox-title {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+input[type="checkbox"] + span + .checkbox-content--reveal {
+  display: none;
+  opacity: .3;
+}
+input[type="checkbox"]:checked + span + .checkbox-content--reveal {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************/
+/* TOGGLES & TOGGLE BUTTONS */
+/*****************************************/
+.toggle-button,
+.toggle {
+  background-color: #fff;
+  border: 1px solid #C8C8C8;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.toggle-button:hover,
+.toggle:hover {
+  border-color: #a0a0a0; 
+  background-color: #fcfcfc;
+}
+
+.toggle-button.active,
+.toggle.active {
+  font-weight: 400;
+  color: #45CEBD;
+  border-color: #45CEBD;
+  background-color: #F5FCFB;
+}
+
+.toggle-button {
+  padding: 20px 12px;
+}
+
+.toggle {
+  padding: 12px 12px;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+
+.toggle--left {
+  -webkit-border-bottom-right-radius: 0px !important;
+  -moz-border-radius-bottomright: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-right: 0px;
+}
+
+.toggle--right {
+  -webkit-border-top-left-radius: 0px !important;
+  -moz-border-radius-topleft: 0px !important;
+  border-top-left-radius: 0px !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  -moz-border-radius-bottomleft: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

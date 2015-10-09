@@ -84,6 +84,43 @@ angular.module('NNN', [
     templateUrl: 'app/demo/tmpl/signup4.html'
   })
 
+
+
+  .state('main', {
+    url:'/main',
+    abstract: true,
+    templateUrl: 'app/demo/tmpl/main.html'
+  })
+  .state('main.dog', {
+    url:'/dog',
+    templateUrl: 'app/demo/tmpl/main-dog.html'
+  })
+
+
+
+
+  .state('main.account', {
+    url:'/account',
+    abstract: true,
+    templateUrl: 'app/demo/tmpl/main-account.html'
+  })
+  .state('main.account.delivery', {
+    url:'/delivery',
+    templateUrl: 'app/demo/tmpl/main-account-delivery.html'
+  })
+  .state('main.account.password', {
+    url:'/password',
+    templateUrl: 'app/demo/tmpl/main-account-password.html'
+  })
+  .state('main.account.subscription', {
+    url:'/subscription',
+    templateUrl: 'app/demo/tmpl/main-account-subscription.html'
+  })
+
+
+
+
+
   .state('dog', {
     url:'/dog',
     abstract: true,

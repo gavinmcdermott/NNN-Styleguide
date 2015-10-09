@@ -53,13 +53,14 @@
 
 .lastUnit .unit__topBorder,
 .unit .unit__topBorder {
-  padding-top: 30px;
+  padding-top: 40px;
   border-top: 1px solid #E2E2E2;
 }
 
 .lastUnit .unit__bottomBorder,
 .unit .unit__bottomBorder {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  padding-top: 10px;
   border-bottom: 1px solid #E2E2E2;
 }
 
@@ -67,7 +68,7 @@
 .group .group__topBorder {
   margin-left: 15px;
   margin-right: 15px;
-  padding-top: 30px;
+  padding-top: 40px;
   border-top: 1px solid #E2E2E2;
 }
 
@@ -76,7 +77,8 @@
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #E2E2E2;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .size8of8 {

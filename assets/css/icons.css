@@ -41,7 +41,20 @@
 p .icon--inline {
   margin-right: 10px;
   font-size: 12px;
+  vertical-align: middle;
   /*color: #45CEBD;*/
+}
+
+.icon--turkey {
+  background: url(../images/icon-turkey.png) no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
+.icon--beef {
+  background: url(../images/icon-beef.png) no-repeat;
+  height: 18px;
+  width: 28px;
 }
 
 
