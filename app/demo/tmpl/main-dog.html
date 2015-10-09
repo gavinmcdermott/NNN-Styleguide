@@ -27,22 +27,13 @@
     <div class="group size5of8">
       
       <div class="lastUnit size1of1">
-        <label>Recipe</label>
-      </div>
-
-      <div class="lastGroup">
-        <div class="unit size1of2">
-          <div class="toggle-button">
-            <p class="nomargin"><span class="icon icon--inline icon--turkey"></span>Tasty Turkey Fare</p>
-          </div>
-        </div>
-
-        <div class="lastUnit size1of2">
-          <div class="toggle-button active">
-            <p class="nomargin"><span class="icon icon--inline icon--beef"></span>Heartland Beef Mash</p>
-          </div>
+        <div class="field-wrap">
+          <label>Recipe</label>
+          <span class="toggle toggle--left size1of2"><span class="icon icon--inline icon--turkey"></span>Tasty Turkey Fare</span>
+          <span class="toggle toggle--right active size1of2"><span class="icon icon--inline icon--beef"></span>Heartland Beef Mash</span>
         </div>
       </div>
+
 
       <div class="lastUnit size1of1">
         <div class="field-wrap">
@@ -74,65 +65,63 @@
     <div class="group size5of8">
       
       <div class="lastUnit size1of1">
-        <label>Daily exercise</label>
-        <span class="toggle toggle--left size1of3">Less than 45 mins</span>
-        <span class="toggle noround size1of3">45 to 90 mins</span>
-        <span class="toggle toggle--right active size1of3">Less than 90 mins</span>
+        <div class="field-wrap">
+          <label>Daily exercise</label>
+          <span class="toggle toggle--left size1of3">Less than 45 mins</span>
+          <span class="toggle toggle--middle noround size1of3">45 to 90 mins</span>
+          <span class="toggle toggle--right active size1of3">Less than 90 mins</span>
+        </div>
       </div>
 
-      <div class="lastGroup soze1of1">
-        <div class="unit size1of2">
-          <div class="field-wrap">
-            <label>Age</label>
-            <input type="number" value="12" />
-          </div>
+      
+      <div class="lastUnit size1of1">
+        <div class="field-wrap">
+          <label>Weight in pounds</label>
+          <input type="number" value="73" />
+
         </div>
-        <div class="lastUnit size1of2">
-          <div class="field-wrap">
-            <label>Weight in pounds</label>
-            <input type="number" value="73" />
+      </div>
+    
+
+      <div class="lastUnit size1of1">
+        <div class="field-wrap">
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__option-input" />
+            <span>Switch Hannah to 1 meal a day</span>
+            <div class="checkbox-content checkbox-content--reveal">Some copy here explaining the meal change that will happen during their next delivery cycle.</div>
+          </label>
+          
+          <div class="notice active notice--success">
+            <strong>Pending meal change:</strong> Hannah was previously receiving a full order.
           </div>
+
         </div>
       </div>
 
       <div class="lastUnit size1of1">
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox__option-input" />
-          <span>Switch Hannah to 1 meal a day</span>
-          <div class="checkbox-content checkbox-content--reveal">Some copy here explaining the meal change that will happen during their next delivery cycle.</div>
-        </label>
-      </div>
+        <div class="field-wrap">
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__option-input" />
+            <span class="checkbox-title">Change Hannah’s portion size</span>
+            <div class="checkbox-content checkbox-content--reveal">
+              <p class="nomargin">Hannah's current portion size is 1 and 3/4 cups per meal.</p>
+              
+              <div class="pad--t24">
+                <div class="field-wrap radio-wrap ">
+                  <input name="h1222" type="radio" />
+                  <label for="">Increase slightly to 2 cups per meal</label>
+                </div>
 
-      <div class="lastUnit size1of1">
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox__option-input" />
-          <span class="checkbox-title">Change Hannah’s portion size</span>
-          <div class="checkbox-content checkbox-content--reveal">
-            <p class="nomargin">Hannah's current portion size is 1 and 3/4 cups per meal.</p>
-            
-            <div class="pad--t24">
-              <div class="field-wrap radio-wrap ">
-                <input name="h1222" type="radio" />
-                <label for="">Increase slightly to 2 cups per meal</label>
+                <div class="field-wrap radio-wrap">
+                  <input name="h1222" type="radio" />
+                  <label for="">Decrease slightly to 1 and 1/2 cups per meal</label>
+                </div>
               </div>
-
-              <div class="field-wrap radio-wrap">
-                <input name="h1222" type="radio" />
-                <label for="">Decrease slightly to 1 and 1/2 cups per meal</label>
-              </div>
+              
             </div>
-            
-          </div>
-        </label>
-      </div>
-
-
-<!--       <div class="lastUnit size1of1">
-        <div class="button-group">
-          <a href="" class="button pri0">Save changes</a>
+          </label>
         </div>
-      </div> -->
-
+      </div>
 
     </div>
     <div class="lastGroup size3of8">
@@ -153,6 +142,46 @@
   </div>
 
 
+  <div class="line">
+    <div class="group size5of8">
+
+      <div class="lastUnit size1of1">
+        <div class="round-box">
+          <div class="line below--30">
+            <p class="f--reg f--dim nomargin float--left">Current weekly total</p>
+            <p class="f--reg f--dim nomargin float--right">$46.54</p>
+          </div>
+          <div class="line line--bordered"></div>
+          <div class="line  below--6">
+            <p class="f--reg f--dim float--left">Price difference with changes</p>
+            <p class="f--reg f--dim f--warn float--right">- $21.35</p>
+          </div>
+          <div class="line">
+            <p class="f--reg nomargin float--left">New price</p>
+            <p class="f--reg nomargin float--right">$25.19</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lastUnit size1of1">
+        <div class="button-group">
+          <a href="" class="button pri0">Update subscription</a>
+          <a href="" class="button pri1">Cancel changes</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="lastGroup size3of8">
+      
+      <div class="lastUnit size1of1">
+        <p class="el--dim">Confirm any changes you make to Hannah's meal plan before updating the weekly subscription.</p>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 
@@ -163,7 +192,7 @@
 
   <div class="line">
     <div class="lastUnit size1of1">  
-      <h3>Puppy profile</h3>
+      <h3>Dog details</h3>
     </div>
   </div>
 
@@ -186,6 +215,18 @@
 
       <div class="lastUnit size1of1">
         <div class="field-wrap">
+          <label for="">Birthday</label>
+          <div class="select-wrap">
+            <select>
+              <option value="volvo">October 7, 2011</option>
+            </select>
+            <span class="icon fa fa-calendar"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lastUnit size1of1">
+        <div class="field-wrap">
           <label for="">Gender</label>
           <div class="select-wrap">
             <select>
@@ -197,6 +238,7 @@
           </div>
         </div>
       </div>
+
 
 <!--       <div class="lastUnit size1of1">
         <div class="button-group">

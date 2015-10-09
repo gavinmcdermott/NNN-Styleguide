@@ -2,7 +2,7 @@
 /* MAIN NAVIGATION */
 /*****************************************/
 .nav-main {
-  /*background-color: #f0f0f0;*/
+  background-color: #f7f7f7;
   height: 72px;
   position: relative;
   z-index: 50;  
@@ -16,7 +16,7 @@
   right: 0;
   left: 0;
   z-index: 50;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
   border-bottom: 1px solid #e8e8e8;
 }
 

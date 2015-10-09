@@ -1,20 +1,6 @@
 
 <div class="section">
   
-<!-- 
-  <div class="line">
-    <div class="lastUnit size1of1">  
-      <h3>Deliveries</h3>
-    </div>
-  </div>
-
-  <div class="line">
-    <div class="lastUnit size1of1">
-      <div class="unit__topBorder"></div>
-    </div>
-  </div>
- -->
-
   <div class="line">
     <div class="group size5of8">
       
@@ -29,8 +15,11 @@
         <div class="lastUnit size1of2">
           <div class="field-wrap">
             <label>Last name</label>
-            <input type="text" value="McDermott" />
+            <input class="invalid" type="text" value="McDermott" />
           </div>
+          <span class="invalid-error">
+            This is what a field error looks like.
+          </span>
         </div>
       </div>
 
@@ -137,25 +126,27 @@
   <div class="line">
     <div class="group size5of8">
 
-      <div class="lastUnit size1of1">
-        <div class="field-wrap radio-wrap">
-          <input checked="true" name="h5asdas" type="radio" />
-          <label for="">I prefer morning deliveries</label>
-          <div class="radio-content radio-content--reveal">
-            <p class="f--dim">Delivery will happen between 7 and 8:30 am.</p>
+      <form action="">
+        <div class="lastUnit size1of1">
+          <div class="field-wrap radio-wrap">
+            <input checked name="h5asdas" type="radio" />
+            <label for="">I prefer morning deliveries</label>
+            <div class="radio-content radio-content--reveal">
+              <p class="f--dim nomargin">Expect delivery between 7 and 8:30 am.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="lastUnit size1of1">
-        <div class="field-wrap radio-wrap">
-          <input name="h5asdas" type="radio" />
-          <label for="">I prefer evening deliveries</label>
-          <div class="radio-content radio-content--reveal">
-            <p class="f--dim">Expect delivery between 8 and 9:30 pm.</p>
+        <div class="lastUnit size1of1">
+          <div class="field-wrap radio-wrap">
+            <input name="h5asdas" type="radio" />
+            <label for="">I prefer evening deliveries</label>
+            <div class="radio-content radio-content--reveal">
+              <p class="f--dim nomargin">Expect delivery between 8 and 9:30 pm.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
 
     </div>
     <div class="lastGroup size3of8">
@@ -175,25 +166,27 @@
   <div class="line">
     <div class="group size5of8">
 
-      <div class="lastUnit size1of1">
-        <div class="field-wrap radio-wrap">
-          <input checked="true" name="jasna" type="radio" value="" />
-          <label for="">My door is easy to access</label>
-          <div class="radio-content radio-content--reveal">
-            <textarea class="nomargin" name="" id="" rows="3" placeholder="Just leave meals in front of my door..."></textarea>
+      <form action="">
+        <div class="lastUnit size1of1">
+          <div class="field-wrap radio-wrap">
+            <input checked name="jasna" type="radio" value="" />
+            <label for="">My door is easy to access</label>
+            <div class="radio-content radio-content--reveal">
+              <textarea class="nomargin" name="" id="" rows="3" placeholder="Just leave meals in front of my door..."></textarea>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="lastUnit size1of1">
-        <div class="field-wrap radio-wrap">
-          <input name="jasna" type="radio" value=""/>
-          <label for="">My door is behind a protected entry</label>
-          <div class="radio-content radio-content--reveal">
-            <textarea class="nomargin" name="" id="" rows="3" placeholder="Call me when you arrive and I'll buzz you in..."></textarea>
+        <div class="lastUnit size1of1">
+          <div class="field-wrap radio-wrap">
+            <input name="jasna" type="radio" value=""/>
+            <label for="">My door is behind a protected entry</label>
+            <div class="radio-content radio-content--reveal">
+              <textarea class="nomargin" name="" id="" rows="3" placeholder="Call me when you arrive and I'll buzz you in..."></textarea>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
 
     </div>
     <div class="lastGroup size3of8">
@@ -208,6 +201,13 @@
     </div>
   </div>
 
+  <div class="line">
+    <div class="lastUnit size1of1">
+      <div class="button-group">
+        <a href="" class="button pri0">Update delivery info</a>
+      </div>
+    </div>
+  </div>
 
 </div>
 

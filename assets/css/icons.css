@@ -50,6 +50,10 @@
   margin-right: 12px;
 }
 
+.icon--main-nav {
+  margin-right: 0px
+}
+
 .icon--turkey {
   background: url(../images/icon-turkey.png) no-repeat;
   height: 18px;
