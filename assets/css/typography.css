@@ -22,7 +22,7 @@ h4 {
 }
 
 p {
-  line-height: 1.7em;
+  /*line-height: 1.7em;*/
   font-size: 15px;
   max-width: 625px;
   margin-bottom: 10px;

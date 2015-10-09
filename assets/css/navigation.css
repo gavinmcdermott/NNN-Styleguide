@@ -47,7 +47,8 @@
   bottom: 0;
   right: 15px;
   left: 15px;
-  border-bottom: 2px solid #E2E2E2;
+  /*border-bottom: 2px solid #E2E2E2;*/
+  border-bottom: 2px solid #45CEBD;
 }
 
 .nav-main__link a {
@@ -61,7 +62,8 @@
 }
 
 .nav-main__link.selected a {
-  color: #5B5E61;
+  /*color: #5B5E61;*/
+  color: #45CEBD;
 }
 
 .nav-main__link a .icon--inline {
