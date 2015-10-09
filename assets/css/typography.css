@@ -65,6 +65,10 @@ xmp.code {
 /*****************************************/
 /* TYPOGRAPHY UTILS */
 /*****************************************/
+.f--mono {
+  font-family: courier;
+}
+
 .f--small {
   font-size: 13px;
 }

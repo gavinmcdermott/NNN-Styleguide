@@ -38,11 +38,16 @@
   margin-right: 10px;
 }
 
-p .icon--inline {
+.icon--inline {
   margin-right: 10px;
   font-size: 12px;
   vertical-align: middle;
   /*color: #45CEBD;*/
+}
+
+.icon--inline__between {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .icon--turkey {

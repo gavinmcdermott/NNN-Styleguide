@@ -266,6 +266,14 @@
   border-bottom-right-radius: 0px !important;
 }
 
+.noborder {
+  border: none !important;
+}
+
+.noborder--top {
+  border-top: none !important; 
+}
+
 .border__left--med {
   border-left: 2px solid #BDBDBD;
 }
