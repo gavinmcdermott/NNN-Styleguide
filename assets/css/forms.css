@@ -52,7 +52,6 @@ textarea {
 }
 
 label {
-  /*color: #484848;*/
   font-weight: 400;
   display: block;
   max-width: 635px;
@@ -60,6 +59,10 @@ label {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none
+}
+
+label.label--empty {
+  min-height: 28px;
 }
 
 label.checkbox {
@@ -608,40 +611,43 @@ input[type="checkbox"]:checked + span + .checkbox-content--reveal {
 
 
 /*****************************************/
-/* TOGGLES & TOGGLE BUTTONS */
+/* TOGGLES */
 /*****************************************/
-.toggle-button,
+.toggle-wrap {
+  
+}
+
+.toggle-wrap:before,
+.toggle-wrap:after {
+  content: " ";
+  display: table
+}
+.toggle-wrap:after {
+  clear: both
+}
+
 .toggle {
   background-color: #fff;
   border: 1px solid #C8C8C8;
   border-radius: 2px;
   cursor: pointer;
   /*margin-bottom: 30px;*/
+  padding: 5px 12px;
+  float: left;
+  display: inline-block;
+  text-align: center;
 }
 
-.toggle-button:hover,
 .toggle:hover {
   border-color: #a0a0a0; 
   background-color: #fcfcfc;
 }
 
-.toggle-button.active,
 .toggle.active {
   font-weight: 400;
   color: #45CEBD;
   border-color: #45CEBD;
   background-color: #EEF9F7;
-}
-
-.toggle-button {
-  padding: 20px 12px;
-}
-
-.toggle {
-  padding: 5px 12px;
-  float: left;
-  display: inline-block;
-  text-align: center;
 }
 
 .toggle--left {

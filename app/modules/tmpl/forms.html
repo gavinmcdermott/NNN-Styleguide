@@ -121,8 +121,49 @@
     </div>
 
 
-    <!-- Fake text input with buttons -->
+
+    <!-- Text Input -->
     <div class="sub-section">
+      <h4 class="f--reg">Text input with error</h4>
+      <p>Basic form text field errors used throughout the app</p>
+      <p>- Input fields have the <code>.invalid</code> class added.</p>
+      <p>- Spans below the input hold the error message.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="f--reg sg-example-divider">Text input error example</h4>
+      <div class="line lastUnit">
+        <div class="field-wrap">
+          <label>Last name</label>
+          <input class="invalid" type="text" value="some bad value" />
+        </div>
+        <span class="invalid-error">
+          This is what a field error looks like.
+        </span>
+      </div>
+
+    </div>
+
+    <div class="sub-section">
+      <h4 class="f--reg">Text input error code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <div class="field-wrap">
+    <label>Last name</label>
+    <input class="invalid" type="text" value="some bad value" />
+  </div>
+  <span class="invalid-error">
+    This is what a field error looks like.
+  </span>
+        </xmp>
+      </div>
+    </div>
+
+
+
+    <!-- Fake text input with buttons -->
+<!--     <div class="sub-section">
       <h4 class="f--reg">Increment input description</h4>
       <p>And incrementing field input used with small incremental values. We don't use them with a lot of values; in which case a <code>select</code> input should be used.</p>
       <p>- Note the use of the <code>.field-wrap--with-button</code> class for this input</p>
@@ -160,7 +201,7 @@
   </div>
         </xmp>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </div>
@@ -285,8 +326,9 @@
         <div class="lastUnit size2of3">  
           <div class="field-wrap radio-wrap">
             <input checked="true" name="h1" type="radio" />
-            <label for="">My door is easy to access</label>
-            <div class="radio-content">
+            <label for="">This radio shows content when checked</label>
+            <div class="radio-content radio-content--reveal">
+              <p class="">Some title</p>
               <textarea class="nomargin" name="" id="" rows="3"></textarea>
             </div>
           </div> 
@@ -303,7 +345,8 @@
   <div class="field-wrap radio-wrap">
     <input checked="true" name="h1" type="radio" />
     <label for="">My door is easy to access</label>
-    <div class="radio-content">
+    <div class="radio-content radio-content--reveal">
+      <p class="">Some title</p>
       <textarea class="nomargin" name="" id="" rows="3"></textarea>
     </div>
   </div>
@@ -328,32 +371,42 @@
   <div class="lastUnit size1of1">
 
     <div class="sub-section">
-      <h4 class="f--reg">No-descriptive-text description</h4>
+      <h4 class="f--reg">Hidden-descriptive-text description</h4>
       <p>Checkboxes are pretty self explanatory...</p>    
     </div>
 
     <div class="sub-section">
-      <h4 class="f--reg sg-example-divider">No-descriptive-text example</h4>
+      <h4 class="f--reg sg-example-divider">Hidden-descriptive-text example</h4>
 
       <div class="line">
-        
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox__option-input" />
-          <span>This has no descriptive text</span>
-        </label>
+     
+        <div class="field-wrap">
+          <label class="checkbox">
+            <input type="checkbox" checked class="checkbox__option-input" />
+            <span>Feed Hannah 2 meals of NomNomNow each day</span>
+            <div class="checkbox-content checkbox-content--reveal">
+              <p class="nomargin">Note how this info shows up when the box is checked.</p>
+            </div>
+          </label>
+        </div>
 
       </div>
     </div>
 
     <div class="sub-section">
-      <h4 class="f--reg">No-descriptive-text code snippet</h4>
+      <h4 class="f--reg">Hidden-descriptive-text code snippet</h4>
 
       <div class="line">
         <xmp class="code"> 
-  <label class="checkbox">
-    <input type="checkbox" class="checkbox__option-input" />
-    <span>This checkbox has no descriptive text</span>
-  </label>
+  <div class="field-wrap">
+    <label class="checkbox">
+      <input type="checkbox" checked class="checkbox__option-input" />
+      <span>Feed Hannah 2 meals of NomNomNow each day</span>
+      <div class="checkbox-content checkbox-content--reveal">
+        <p class="nomargin">Note how this info shows up when the box is checked.</p>
+      </div>
+    </label>
+  </div>
         </xmp>
       </div>
     </div>
@@ -363,7 +416,8 @@
 
     <div class="sub-section">
       <h4 class="f--reg">With-descriptive-text description</h4>
-      <p>Checkboxes can also have descriptions.</p>    
+      <p>Checkboxes can also have descriptions.</p> 
+      <p>- We add the <code>.checkbox-content--reveal</code> class to the checkbox content div</p>   
     </div>
 
     <div class="sub-section">
@@ -371,11 +425,15 @@
 
       <div class="line">
         
-  <label class="checkbox">
-    <input type="checkbox" class="checkbox__option-input" checked />
-    <span>I accept you, always, NomNom</span>
-    <p class="description">This is some descriptive text with it</p>
-  </label>
+        <div class="field-wrap">
+          <label class="checkbox">
+            <input type="checkbox" checked class="checkbox__option-input" />
+            <span>Feed Hannah 2 meals of NomNomNow each day</span>
+            <div class="checkbox-content">
+              <p class="nomargin">Note how this info is always showing regardless of the box state.</p>
+            </div>
+          </label>
+        </div>
 
       </div>
     </div>
@@ -385,11 +443,63 @@
 
       <div class="line">
         <xmp class="code"> 
-  <label class="checkbox">
-    <input type="checkbox" class="checkbox__option-input" checked />
-    <span>I accept you, always, NomNom</span>
-    <p class="description">This is some descriptive text with it</p>
-  </label>
+  <div class="field-wrap">
+    <label class="checkbox">
+      <input type="checkbox" checked class="checkbox__option-input" />
+      <span>Feed Hannah 2 meals of NomNomNow each day</span>
+      <div class="checkbox-content">
+        <p class="nomargin">Note how this info shows up when the box is checked.</p>
+      </div>
+    </label>
+  </div>
+        </xmp>
+      </div>
+    </div>
+
+
+
+    <!-- with notification -->
+    <div class="sub-section">
+      <h4 class="f--reg">Regarding update <a ui-sref="guide.notices">notices</a></h4>
+      <p>When someone is updating a form and we're giving them feedback as to what they're changing as they go (because we're assuming it's an important form), we'll show these types of notifiers as they make changes.</p> 
+      <p>- These <a ui-sref="guide.notices">notices</a> are within the <code>field-wrap</code> div.</p>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="f--reg sg-example-divider">With-notice-text example</h4>
+
+      <div class="line">
+        
+        <div class="field-wrap">
+          <label class="checkbox">
+            <input type="checkbox" checked class="checkbox__option-input" />
+            <span>Feed Hannah 2 meals of NomNomNow each day</span>
+          </label>
+          <div class="notice active notice--success">
+            <p class="nomargin"><strong>Pending meal change:</strong> Hannah was previously receiving a half order.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4 class="f--reg">With-notice-text code snippet</h4>
+
+      <div class="line">
+        <xmp class="code"> 
+  <!-- The field -->
+  <div class="field-wrap">
+    <label class="checkbox">
+      <input type="checkbox" checked class="checkbox__option-input" />
+      <span>Feed Hannah 2 meals of NomNomNow each day</span>
+    </label>
+  </div>
+
+  <!-- The notification -->
+  <div class="notice active notice--success">
+    <p class="nomargin"><strong>Pending meal change:</strong> Hannah was previously receiving a half order.</p>
+  </div>
         </xmp>
       </div>
     </div>

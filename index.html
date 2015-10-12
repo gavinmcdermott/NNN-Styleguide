@@ -29,7 +29,7 @@
     <!-- SS Header-->
     <header class="nav-main__fixed-wrap" ng-hide="$state.includes('signup') || $state.includes('main')">
       <!-- Inner wrapper -->
-      <div class="container--wide nav-main border__bottom--light selfclear">
+      <div class="container--wide nav-main">
         <div class="line">
           <nav class="lastUnit size2of3">
             <ul class="linear-list">          
@@ -51,35 +51,56 @@
     <!-- Main Header-->
     <header class="nav-main__fixed-wrap" ng-show="$state.includes('main')">
       <!-- Inner wrapper -->
-      <div class="container--wide nav-main selfclear">
-        <div class="line">
-          <nav class="group size1of3">
-            <div class="lastUnit size1of1">
-              <ul class="linear-list">          
-                <li class="nav-main__link">
-                  <a ui-sref="guide.grid"><span class="logo logo__nav-main logo--small"></span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <nav class="lastGroup size2of3">
-            <div class="lastUnit size1of1">
-              <ul class="linear-list">          
-                <li class="nav-main__link float--right" ui-sref-active="selected">
-                  <a class="gray align--center pad--lev2 pad--tb0" ui-sref="guide.grid">Sign out</a>
-                </li>
-                <li class=" float--right"><span class="f--dim el--dim">|</span></li>
-                <li class="nav-main__link float--right" ui-sref-active="selected">
-                  <a class="gray align--center pad--lev2 pad--tb0" ui-sref="main.account.delivery">Account</a>
-                </li>
-                <li class="nav-main__link float--right" ui-sref-active="selected">
-                  <a class="gray align--center pad--lev2 pad--tb0" ui-sref="main.dog">Dogs <span class="icon icon--inline icon--main-nav fa fa-chevron-down"></span></a>
-                </li>
-              </ul>
-           </div> 
+      <div class="container--wide nav-main lastUnit size1of1">
+      
+        <nav>
+          <ul class="linear-list float--left">          
+            <li class="nav-main__link">
+              <a ui-sref="guide.grid"><span class="logo logo__nav-main logo--small"></span></a>
+            </li>
+          </ul>
+        </nav>
+        
+        <nav>
+          <ul class="linear-list float--right">          
+            <li class="nav-main__link float--right" ui-sref-active="selected">
+              <a class="gray align--center pad--lev2 pad--tb0" ui-sref="guide.grid">Sign out</a>
+            </li>
+            <li class=" float--right"><span class="f--dim el--dim">|</span></li>
+            <li class="nav-main__link float--right" ui-sref-active="selected">
+              <a class="gray align--center pad--lev2 pad--tb0" ui-sref="main.account.delivery">Account</a>
+            </li>
+            <li class="nav-main__link float--right" ui-sref-active="selected">
+              <a class="gray align--center pad--lev2 pad--tb0" ui-sref="main.dog">Dogs <span class="icon icon--inline icon--pad-left icon--main-nav fa fa-chevron-down"></span></a>
+            </li>
+          </ul>
+        </nav>           
+      </div>
+
+      <!-- Main nav dropdown for dogs -->
+<!--       <div class="container--wide">
+        
+        <div class="nav-main__dropdown-wrapper">
+          <nav class="nav-main__dropdown">
+            <ul>
+              <li class="nav-main__dropdown-item">
+                <a href="">Harley</a>
+              </li>
+              <li class="nav-main__dropdown-item selected">
+                <a href="">Hannah</a>
+              </li>
+              <li class="nav-main__dropdown-item">
+                <a href="">Sprout</a>
+              </li>
+              <li class="nav-main__dropdown-item">
+                <a href="">Mim</a>
+              </li>
+            </ul>
           </nav>
         </div>
-      </div>
+
+      </div> -->
+
     </header>
     
     <!-- SS body -->
