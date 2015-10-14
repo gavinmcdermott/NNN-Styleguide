@@ -71,6 +71,18 @@
 /*****************************************/
 /* LOGOS */
 /*****************************************/
+.logo-text {
+  background: url(../images/nom_logo_words.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-text--med {
+  height: 48px;
+  width: 100px;
+}
+
 .logo {
   background: url(../images/nom_logo.png) no-repeat;
   background-size: contain;
