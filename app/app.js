@@ -83,6 +83,11 @@ angular.module('NNN', [
     url:'/4',
     templateUrl: 'app/demo/tmpl/signup4.html'
   })
+  .state('signup.fast', {
+    url:'/fast',
+    templateUrl: 'app/demo/tmpl/signup-fast.html'
+  })
+
 
 
 
